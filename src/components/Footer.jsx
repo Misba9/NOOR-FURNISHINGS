@@ -19,8 +19,12 @@ const Footer = () => {
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="relative">
-                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center">
-                  <Sparkles className="text-white w-5 h-5" />
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border-2 border-gold-500">
+                  <img 
+                    src="/logo.png" 
+                    alt="Noor Furnishings Logo" 
+                    className="w-6 h-6 object-contain"
+                  />
                 </div>
                 <div className="absolute -top-1 -right-1 w-2 h-2 bg-gold-400 rounded-full animate-pulse"></div>
               </div>
@@ -85,7 +89,7 @@ const Footer = () => {
               <li><Link to="/products/bedcovers/double-bed" className="hover:text-gold-400 transition-colors">Bedcovers</Link></li>
               <li><Link to="/products/blinds/venetian" className="hover:text-gold-400 transition-colors">Blinds</Link></li>
               <li><Link to="/products/upholstery/sofa-fabrics" className="hover:text-gold-400 transition-colors">Upholstery</Link></li>
-              <li><Link to="/products/other-solutions/window-treatment" className="hover:text-gold-400 transition-colors">Other Solutions</Link></li>
+              <li><Link to="/subcategories/othersolutions/window-treatment" className="hover:text-gold-400 transition-colors">Other Solutions</Link></li>
             </ul>
           </div>
 

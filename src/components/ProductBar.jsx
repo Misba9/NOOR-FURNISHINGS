@@ -39,6 +39,20 @@ const ProductBar = () => {
     },
   ];
 
+  // Helper function to generate correct paths
+  const generatePath = (categoryName, itemName) => {
+    // Special case for "Other Solutions" category
+    if (categoryName === 'Other Solutions') {
+      const formattedItemName = itemName.toLowerCase().replace(/\s+/g, '-');
+      return `/subcategories/othersolutions/${formattedItemName}`;
+    }
+    
+    // For all other categories
+    const formattedCategoryName = categoryName.toLowerCase().replace(/\s+/g, '-');
+    const formattedItemName = itemName.toLowerCase().replace(/\s+/g, '-');
+    return `/subcategories/${formattedCategoryName}/${formattedItemName}`;
+  };
+
   return (
     <div className="bg-brown-900 text-white border-b-2 border-gold-600">
       <div className="container mx-auto px-4">
@@ -68,7 +82,7 @@ const ProductBar = () => {
                     {category.items.map((item, index) => (
                       <Link
                         key={item}
-                        to={`/subcategories/${category.name.toLowerCase().replace(/\s+/g, '-')}/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                        to={generatePath(category.name, item)}
                         className="block px-6 py-3 hover:bg-gold-50 hover:text-gold-600 transition-colors border-b border-brown-100 last:border-b-0 flex items-center gap-2 group/item"
                       >
                         <span className="w-2 h-2 bg-gold-600 rounded-full group-hover/item:scale-125 transition-transform"></span>
@@ -97,7 +111,7 @@ const ProductBar = () => {
                 {category.items.map((item) => (
                   <option
                     key={item}
-                    value={`/subcategories/${category.name.toLowerCase().replace(/\s+/g, '-')}/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                    value={generatePath(category.name, item)}
                   >
                     {item}
                   </option>

@@ -9,6 +9,7 @@ import Testimonials from './pages/Testimonials';
 import Enquiry from './pages/Enquiry';
 import ProductPage from './pages/ProductPage';
 import Products from './pages/Products';
+import NotFound from './pages/NotFound';
 // Import category pages
 import Curtains from './pages/categories/Curtains';
 import Carpets from './pages/categories/Carpets';
@@ -134,6 +135,9 @@ function App() {
           
           {/* Existing product detail route */}
           <Route path="products/:category/:subcategory" element={<ProductPage />} />
+          
+          {/* Catch-all route for 404 page */}
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>

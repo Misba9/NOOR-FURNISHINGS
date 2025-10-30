@@ -42,7 +42,7 @@ const Home = () => {
     { name: 'Luxury Bedcovers', image: '/Luxury-Bed-Set.jpg', category: 'bedcovers', subcategory: 'luxury-bed-sets' },
     { name: 'Roman Blinds', image: '/Roman-Blind.jpg', category: 'blinds', subcategory: 'roman' },
     { name: 'Sofa Fabrics', image: '/Upholstery-Sofa-Fabrics.jpg', category: 'upholstery', subcategory: 'sofa-fabrics' },
-    { name: 'Window Treatments', image: '/Window-Treatment.jpg', category: 'other-solutions', subcategory: 'window-treatment' },
+    { name: 'Window Treatments', image: '/Window-Treatment.jpg', category: 'othersolutions', subcategory: 'window-treatment' },
   ];
 
   const whyChooseUs = [

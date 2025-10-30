@@ -48,11 +48,14 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative">
-              {/* Enhanced logo with decorative elements */}
-              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center relative">
-                <Sparkles className="text-white w-6 h-6" />
-                <div className="absolute -top-1 -right-1 w-3 h-3 bg-gold-400 rounded-full animate-pulse"></div>
-                <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-gold-300 rounded-full animate-pulse delay-100"></div>
+              {/* Logo image with decorative elements */}
+              <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center relative border-2 border-gold-500 shadow-md">
+                <img 
+                  src="/logo.png" 
+                  alt="Noor Furnishings Logo" 
+                  className="w-8 h-8 object-contain"
+                />
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-gold-500 rounded-full animate-pulse"></div>
               </div>
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-gold-500 rounded-full animate-pulse"></div>
             </div>
