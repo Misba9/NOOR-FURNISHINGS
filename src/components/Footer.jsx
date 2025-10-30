@@ -84,11 +84,11 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-bold mb-4">Product Categories</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/products/curtains/jacquard" className="hover:text-gold-400 transition-colors">Curtains</Link></li>
-              <li><Link to="/products/carpets/shaggy" className="hover:text-gold-400 transition-colors">Carpets</Link></li>
-              <li><Link to="/products/bedcovers/double-bed" className="hover:text-gold-400 transition-colors">Bedcovers</Link></li>
-              <li><Link to="/products/blinds/venetian" className="hover:text-gold-400 transition-colors">Blinds</Link></li>
-              <li><Link to="/products/upholstery/sofa-fabrics" className="hover:text-gold-400 transition-colors">Upholstery</Link></li>
+              <li><Link to="/subcategories/curtains/jacquard" className="hover:text-gold-400 transition-colors">Curtains</Link></li>
+              <li><Link to="/subcategories/carpets/shaggy" className="hover:text-gold-400 transition-colors">Carpets</Link></li>
+              <li><Link to="/subcategories/bedcovers/double-bed" className="hover:text-gold-400 transition-colors">Bedcovers</Link></li>
+              <li><Link to="/subcategories/blinds/venetian" className="hover:text-gold-400 transition-colors">Blinds</Link></li>
+              <li><Link to="/subcategories/upholstery/sofa-fabrics" className="hover:text-gold-400 transition-colors">Upholstery</Link></li>
               <li><Link to="/subcategories/othersolutions/window-treatment" className="hover:text-gold-400 transition-colors">Other Solutions</Link></li>
             </ul>
           </div>

@@ -7,7 +7,6 @@ import Contact from './pages/Contact';
 import FAQ from './pages/FAQ';
 import Testimonials from './pages/Testimonials';
 import Enquiry from './pages/Enquiry';
-import ProductPage from './pages/ProductPage';
 import Products from './pages/Products';
 import NotFound from './pages/NotFound';
 // Import category pages
@@ -132,9 +131,6 @@ function App() {
           <Route path="subcategories/othersolutions/window-treatment" element={<WindowTreatment />} />
           <Route path="subcategories/othersolutions/valance" element={<Valance />} />
           <Route path="subcategories/othersolutions/fittings" element={<Fittings />} />
-          
-          {/* Existing product detail route */}
-          <Route path="products/:category/:subcategory" element={<ProductPage />} />
           
           {/* Catch-all route for 404 page */}
           <Route path="*" element={<NotFound />} />
