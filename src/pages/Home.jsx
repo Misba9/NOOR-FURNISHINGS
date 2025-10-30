@@ -151,7 +151,7 @@ const Home = () => {
             {[
               { image: '/Jacguard-Curtain.jpg', title: 'Luxury Interiors' },
               { image: '/Shaggy-Carpet.jpg', title: 'Expert Craftsmanship' },
-              { image: '/Linen-Bedcover.jpg', title: 'Custom Solutions' },
+              { image: '/fittings.jpg', title: 'Fittings' },
             ].map((item, index) => (
               <motion.div
                 key={index}
