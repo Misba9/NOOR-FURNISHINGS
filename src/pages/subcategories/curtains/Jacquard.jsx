@@ -1,23 +1,13 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Check, Star } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 
-const ProductPage = () => {
-  const { category, subcategory } = useParams();
-
-  const formatTitle = (str) => {
-    return str.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-  };
-
-  const categoryTitle = formatTitle(category);
-  const subcategoryTitle = formatTitle(subcategory);
-
-  const productImages = [
-    'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-  ];
+const Jacquard = () => {
+  const productImage = '/Jacguard-Curtain.jpg';
 
   const features = [
+    'Intricate woven patterns with rich textures',
     'Premium quality imported fabric',
     'Custom sizing available',
     'Professional installation included',
@@ -25,22 +15,21 @@ const ProductPage = () => {
     '2-year warranty',
     'Wide range of colors and patterns',
     'UV resistant and fade-proof',
-    'Expert consultation provided',
   ];
 
   const relatedProducts = [
-    { name: 'Jacquard Curtains', image: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=400&h=300&fit=crop', link: '/products/curtains/jacquard' },
-    { name: 'Shaggy Carpets', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=300&fit=crop', link: '/products/carpets/shaggy' },
-    { name: 'Roman Blinds', image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop', link: '/products/blinds/roman' },
+    { name: 'Blackout Curtains', image: '/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
+    { name: 'Linen Curtains', image: '/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
+    { name: 'Sheer Curtains', image: '/Sheer-Elegance-Curtain.jpg', link: '/subcategories/curtains/sheer' },
   ];
 
   return (
     <div>
-      <section className="relative h-64 overflow-hidden">
+      <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src={productImages[0]}
-          alt={subcategoryTitle}
+          src="/Jacguard-Curtain.jpg"
+          alt="Jacquard Curtains"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 z-20 flex items-center justify-center">
@@ -49,8 +38,8 @@ const ProductPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center text-white"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">{subcategoryTitle}</h1>
-            <p className="text-xl text-gold-200">{categoryTitle}</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">Jacquard Curtains</h1>
+            <p className="text-xl text-gold-200">Luxurious Woven Fabric with Intricate Patterns</p>
           </motion.div>
         </div>
       </section>
@@ -59,24 +48,18 @@ const ProductPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <div className="grid grid-cols-2 gap-4">
-                {productImages.map((image, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="rounded-lg overflow-hidden shadow-lg"
-                  >
-                    <img
-                      src={image}
-                      alt={`${subcategoryTitle} ${index + 1}`}
-                      className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
-                    />
-                  </motion.div>
-                ))}
-              </div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="rounded-lg overflow-hidden shadow-lg h-full transform hover:scale-105 transition-transform duration-300"
+              >
+                <img
+                  src={productImage}
+                  alt="Jacquard Curtains"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
+              </motion.div>
             </div>
 
             <div>
@@ -85,30 +68,21 @@ const ProductPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={20} className="fill-gold-500 text-gold-500" />
-                    ))}
-                  </div>
-                  <span className="text-brown-700">(500+ reviews)</span>
-                </div>
-
-                <h2 className="text-3xl font-bold text-brown-900 mb-4">{subcategoryTitle}</h2>
+                <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Jacquard Curtains</h2>
                 
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Transform your space with our premium {subcategoryTitle.toLowerCase()}. Crafted with the finest materials 
-                  and expert craftsmanship, our products combine luxury, durability, and timeless elegance. Perfect for 
-                  both residential and commercial spaces.
+                  Elevate your space with our premium Jacquard curtains, featuring intricate woven patterns that add 
+                  depth and texture to any room. Crafted with the finest materials and expert craftsmanship, these 
+                  curtains combine luxury, durability, and timeless elegance.
                 </p>
 
-                <div className="bg-brown-50 p-6 rounded-lg mb-6">
+                <div className="bg-brown-50 p-6 rounded-lg mb-6 hover:shadow-md transition-shadow duration-300">
                   <h3 className="text-xl font-bold text-brown-900 mb-4">Key Features</h3>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                     {features.map((feature, index) => (
-                      <div key={index} className="flex items-start gap-2">
-                        <Check className="text-gold-600 flex-shrink-0 mt-1" size={18} />
-                        <span className="text-brown-700">{feature}</span>
+                      <div key={index} className="flex items-start gap-2 group">
+                        <Check className="text-gold-600 flex-shrink-0 mt-1 group-hover:scale-110 transition-transform" size={18} />
+                        <span className="text-brown-700 group-hover:text-brown-900 transition-colors">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -117,15 +91,16 @@ const ProductPage = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link
                     to="/enquiry"
-                    className="bg-gradient-to-r from-gold-600 to-gold-700 text-white px-8 py-3 rounded-full font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                    className="bg-gradient-to-r from-gold-600 to-gold-700 text-white px-8 py-3 rounded-full font-bold hover:shadow-xl transition-all flex items-center justify-center gap-2 group"
                   >
-                    Get a Quote <ArrowRight size={20} />
+                    <span className="group-hover:scale-105 transition-transform">Get a Quote</span>
+                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <Link
                     to="/contact"
-                    className="bg-transparent border-2 border-brown-900 text-brown-900 px-8 py-3 rounded-full font-bold hover:bg-brown-900 hover:text-white transition-all text-center"
+                    className="bg-transparent border-2 border-brown-900 text-brown-900 px-8 py-3 rounded-full font-bold hover:bg-brown-900 hover:text-white transition-all text-center group"
                   >
-                    Contact Us
+                    <span className="group-hover:scale-105 transition-transform">Contact Us</span>
                   </Link>
                 </div>
               </motion.div>
@@ -143,19 +118,19 @@ const ProductPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-brown-900 mb-4">Product Details</h2>
-            <p className="text-brown-700">Everything you need to know about our {subcategoryTitle.toLowerCase()}</p>
+            <p className="text-brown-700">Everything you need to know about our Jacquard curtains</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium imported fabrics that are durable, fade-resistant, and easy to maintain. 
-                Each piece is carefully selected for quality and longevity.
+                Made from premium imported fabrics with intricate woven patterns that are durable, fade-resistant, 
+                and easy to maintain. Each piece is carefully selected for quality and longevity.
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
                 Available in custom sizes, colors, and patterns to match your unique style and requirements. 
@@ -163,7 +138,7 @@ const ProductPage = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-lg shadow-md">
+            <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
                 Professional installation included with precise measurements and expert fitting. 
@@ -183,7 +158,7 @@ const ProductPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-brown-900 mb-4">You May Also Like</h2>
-            <p className="text-brown-700">Explore more of our premium collection</p>
+            <p className="text-brown-700">Explore more of our curtain collection</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -196,7 +171,7 @@ const ProductPage = () => {
                 transition={{ delay: index * 0.1 }}
               >
                 <Link to={product.link} className="group">
-                  <div className="relative overflow-hidden rounded-lg shadow-lg">
+                  <div className="relative overflow-hidden rounded-lg shadow-lg transform group-hover:-translate-y-2 transition-all duration-300">
                     <img
                       src={product.image}
                       alt={product.name}
@@ -212,7 +187,7 @@ const ProductPage = () => {
                     </div>
                   </div>
                   <div className="mt-4 text-center">
-                    <h3 className="text-lg font-bold text-brown-900">{product.name}</h3>
+                    <h3 className="text-lg font-bold text-brown-900 group-hover:text-gold-600 transition-colors">{product.name}</h3>
                   </div>
                 </Link>
               </motion.div>
@@ -224,4 +199,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default Jacquard;

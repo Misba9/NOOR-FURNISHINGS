@@ -1,46 +1,35 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Check, Star } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 
-const ProductPage = () => {
-  const { category, subcategory } = useParams();
-
-  const formatTitle = (str) => {
-    return str.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-  };
-
-  const categoryTitle = formatTitle(category);
-  const subcategoryTitle = formatTitle(subcategory);
-
-  const productImages = [
-    'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
-  ];
+const Sheer = () => {
+  const productImage = '/Sheer-Elegance-Curtain.jpg';
 
   const features = [
-    'Premium quality imported fabric',
+    'Light and airy for soft, diffused light',
+    'Premium quality sheer fabric',
     'Custom sizing available',
     'Professional installation included',
     'Easy maintenance and cleaning',
     '2-year warranty',
     'Wide range of colors and patterns',
-    'UV resistant and fade-proof',
-    'Expert consultation provided',
+    'Layering option with other curtains',
   ];
 
   const relatedProducts = [
-    { name: 'Jacquard Curtains', image: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=400&h=300&fit=crop', link: '/products/curtains/jacquard' },
-    { name: 'Shaggy Carpets', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=300&fit=crop', link: '/products/carpets/shaggy' },
-    { name: 'Roman Blinds', image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop', link: '/products/blinds/roman' },
+    { name: 'Jacquard Curtains', image: '/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
+    { name: 'Blackout Curtains', image: '/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
+    { name: 'Linen Curtains', image: '/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
   ];
 
   return (
     <div>
-      <section className="relative h-64 overflow-hidden">
+      <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src={productImages[0]}
-          alt={subcategoryTitle}
+          src="/Sheer-Elegance-Curtain.jpg"
+          alt="Sheer Curtains"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 z-20 flex items-center justify-center">
@@ -49,8 +38,8 @@ const ProductPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center text-white"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">{subcategoryTitle}</h1>
-            <p className="text-xl text-gold-200">{categoryTitle}</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">Sheer Curtains</h1>
+            <p className="text-xl text-gold-200">Light and Airy for Soft, Diffused Light</p>
           </motion.div>
         </div>
       </section>
@@ -59,24 +48,18 @@ const ProductPage = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div>
-              <div className="grid grid-cols-2 gap-4">
-                {productImages.map((image, index) => (
-                  <motion.div
-                    key={index}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.1 }}
-                    className="rounded-lg overflow-hidden shadow-lg"
-                  >
-                    <img
-                      src={image}
-                      alt={`${subcategoryTitle} ${index + 1}`}
-                      className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
-                    />
-                  </motion.div>
-                ))}
-              </div>
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                className="rounded-lg overflow-hidden shadow-lg h-full"
+              >
+                <img
+                  src={productImage}
+                  alt="Sheer Curtains"
+                  className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                />
+              </motion.div>
             </div>
 
             <div>
@@ -85,21 +68,12 @@ const ProductPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={20} className="fill-gold-500 text-gold-500" />
-                    ))}
-                  </div>
-                  <span className="text-brown-700">(500+ reviews)</span>
-                </div>
-
-                <h2 className="text-3xl font-bold text-brown-900 mb-4">{subcategoryTitle}</h2>
+                <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Sheer Curtains</h2>
                 
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Transform your space with our premium {subcategoryTitle.toLowerCase()}. Crafted with the finest materials 
-                  and expert craftsmanship, our products combine luxury, durability, and timeless elegance. Perfect for 
-                  both residential and commercial spaces.
+                  Brighten your space with our premium sheer curtains, designed to filter natural light while 
+                  maintaining privacy. These lightweight curtains add an elegant touch to any room with their 
+                  delicate fabric and flowing movement.
                 </p>
 
                 <div className="bg-brown-50 p-6 rounded-lg mb-6">
@@ -143,23 +117,23 @@ const ProductPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-brown-900 mb-4">Product Details</h2>
-            <p className="text-brown-700">Everything you need to know about our {subcategoryTitle.toLowerCase()}</p>
+            <p className="text-brown-700">Everything you need to know about our sheer curtains</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium imported fabrics that are durable, fade-resistant, and easy to maintain. 
-                Each piece is carefully selected for quality and longevity.
+                Made from premium sheer fabrics that are lightweight yet durable. 
+                Available in various textures from crisp voile to soft chiffon for different light filtering effects.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in custom sizes, colors, and patterns to match your unique style and requirements. 
-                Our team provides expert guidance for perfect selections.
+                Available in custom sizes and a range of colors to complement your decor. 
+                Perfect for layering with other curtain types for versatile light control.
               </p>
             </div>
 
@@ -167,7 +141,7 @@ const ProductPage = () => {
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
                 Professional installation included with precise measurements and expert fitting. 
-                Our experienced team ensures flawless results every time.
+                Our experienced team ensures beautiful draping that showcases the elegant movement of sheer fabric.
               </p>
             </div>
           </div>
@@ -183,7 +157,7 @@ const ProductPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-brown-900 mb-4">You May Also Like</h2>
-            <p className="text-brown-700">Explore more of our premium collection</p>
+            <p className="text-brown-700">Explore more of our curtain collection</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -224,4 +198,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default Sheer;

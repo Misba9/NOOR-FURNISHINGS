@@ -25,7 +25,7 @@ const Contact = () => {
       <section className="relative h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1920&h=600&fit=crop"
+          src="/Jacguard-Curtain.jpg"
           alt="Contact Us"
           className="w-full h-full object-cover"
         />
@@ -205,17 +205,92 @@ const Contact = () => {
         </div>
       </section>
 
-      <section className="h-96">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30444.537668769533!2d78.43588992089844!3d17.41698900000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9158f201b205%3A0x11bbe7be7792411b!2sCharminar!5e0!3m2!1sen!2sin!4v1234567890123"
-          width="100%"
-          height="100%"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Royal Elegance Location"
-        />
+      <section className="py-16 bg-brown-50">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-brown-900 mb-4">Visit Our Showroom</h2>
+            <p className="text-brown-700 max-w-3xl mx-auto">
+              Experience our premium collections in person at our showroom in Hyderabad. Our expert team is ready to help you find the perfect solutions for your space.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div
+              initial={{ opacity: 0, x: -30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="/Shaggy-Carpet.jpg"
+                alt="Our Showroom"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-brown-900 mb-2">Premium Collections</h3>
+                <p className="text-brown-700 mb-4">
+                  Explore our extensive range of curtains, carpets, and upholstery fabrics in person. 
+                  Touch and feel the quality of our premium materials.
+                </p>
+                <div className="flex items-center text-gold-600 font-medium">
+                  <MapPin size={18} className="mr-2" />
+                  <span>Banjara Hills, Hyderabad</span>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 30 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-lg shadow-lg overflow-hidden"
+            >
+              <img
+                src="/Linen-Curtain.jpg"
+                alt="Expert Consultation"
+                className="w-full h-64 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-brown-900 mb-2">Expert Consultation</h3>
+                <p className="text-brown-700 mb-4">
+                  Our design experts will help you choose the perfect products for your space, 
+                  providing personalized recommendations based on your style and requirements.
+                </p>
+                <div className="flex items-center text-gold-600 font-medium">
+                  <Clock size={18} className="mr-2" />
+                  <span>Open 10 AM - 10 PM Daily</span>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gradient-to-r from-gold-600 to-gold-700 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold mb-4">Need Immediate Assistance?</h2>
+            <p className="text-xl mb-8">Chat with us on WhatsApp for instant support</p>
+            <a
+              href="https://wa.me/919392572455"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-white text-gold-700 px-8 py-3 rounded-full font-bold hover:bg-brown-100 transition-all inline-flex items-center gap-2"
+            >
+              <MessageCircle size={20} />
+              Chat on WhatsApp
+            </a>
+          </motion.div>
+        </div>
       </section>
     </div>
   );

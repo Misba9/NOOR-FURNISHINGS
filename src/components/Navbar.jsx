@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sparkles } from 'lucide-react';
+import { Menu, X, Sparkles, ChevronDown } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isProductsDropdownOpen, setIsProductsDropdownOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -18,14 +19,25 @@ const Navbar = () => {
 
   useEffect(() => {
     setIsMobileMenuOpen(false);
+    setIsProductsDropdownOpen(false);
   }, [location]);
 
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'About Us', path: '/about' },
+    { name: 'Products', path: '/products' },
     { name: 'Contact Us', path: '/contact' },
     { name: 'FAQ', path: '/faq' },
     { name: 'Testimonials', path: '/testimonials' },
+  ];
+
+  const productCategories = [
+    { name: 'Curtains', path: '/curtains' },
+    { name: 'Carpets', path: '/carpets' },
+    { name: 'Bedcovers', path: '/bedcovers' },
+    { name: 'Blinds', path: '/blinds' },
+    { name: 'Upholstery', path: '/upholstery' },
+    { name: 'Other Solutions', path: '/other-solutions' },
   ];
 
   return (
@@ -35,7 +47,15 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-2 group">
-            <Sparkles className="text-gold-600 w-8 h-8 group-hover:rotate-180 transition-transform duration-500" />
+            <div className="relative">
+              {/* Enhanced logo with decorative elements */}
+              <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center relative">
+                <Sparkles className="text-white w-6 h-6" />
+                <div className="absolute -top-1 -right-1 w-3 h-3 bg-gold-400 rounded-full animate-pulse"></div>
+                <div className="absolute -bottom-1 -left-1 w-2 h-2 bg-gold-300 rounded-full animate-pulse delay-100"></div>
+              </div>
+              <div className="absolute -top-1 -right-1 w-3 h-3 bg-gold-500 rounded-full animate-pulse"></div>
+            </div>
             <div className="flex flex-col">
               <span className="text-2xl font-bold text-brown-800 tracking-tight">NOOR FURNISHINGS</span>
               <span className="text-xs text-gold-600 tracking-widest">PREMIUM INTERIORS</span>
@@ -60,11 +80,12 @@ const Navbar = () => {
                 )}
               </Link>
             ))}
+            
             <Link
               to="/enquiry"
-              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2"
             >
-              Get an Enquiry
+              <span>Get an Enquiry</span>
             </Link>
           </div>
 
@@ -98,6 +119,7 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
+              
               <Link
                 to="/enquiry"
                 className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2.5 rounded-full font-medium text-center hover:shadow-lg transition-all"

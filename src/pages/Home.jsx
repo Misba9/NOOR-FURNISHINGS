@@ -10,17 +10,17 @@ const Home = () => {
     {
       title: 'Transform Your Space with Royal Elegance',
       subtitle: 'Premium Curtains, Carpets & Interiors',
-      image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&h=1080&fit=crop',
+      image: '/Jacguard-Curtain.jpg',
     },
     {
       title: 'Luxury That Speaks Volumes',
       subtitle: 'Handcrafted Designs for Distinguished Spaces',
-      image: 'https://images.unsplash.com/photo-1616137466211-f939a420be84?w=1920&h=1080&fit=crop',
+      image: '/Shaggy-Carpet.jpg',
     },
     {
       title: 'Where Comfort Meets Elegance',
       subtitle: 'Bespoke Solutions for Modern Living',
-      image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1920&h=1080&fit=crop',
+      image: '/Linen-Curtain.jpg',
     },
   ];
 
@@ -32,12 +32,17 @@ const Home = () => {
   }, []);
 
   const featuredProducts = [
-    { name: 'Jacquard Curtains', image: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=600&h=400&fit=crop', category: 'curtains', subcategory: 'jacquard' },
-    { name: 'Shaggy Carpets', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&h=400&fit=crop', category: 'carpets', subcategory: 'shaggy' },
-    { name: 'Luxury Bedcovers', image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&h=400&fit=crop', category: 'bedcovers', subcategory: 'luxury-bed-sets' },
-    { name: 'Roman Blinds', image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=400&fit=crop', category: 'blinds', subcategory: 'roman' },
-    { name: 'Sofa Fabrics', image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&h=400&fit=crop', category: 'upholstery', subcategory: 'sofa-fabrics' },
-    { name: 'Window Treatments', image: 'https://images.unsplash.com/photo-1616137466211-f939a420be84?w=600&h=400&fit=crop', category: 'other-solutions', subcategory: 'window-treatment' },
+    {
+      name: 'Jacquard Curtains',
+      image: '/Jacguard-Curtain.jpg',
+      category: 'curtains',
+      subcategory: 'jacquard'
+    },
+    { name: 'Shaggy Carpets', image: '/Shaggy-Carpet.jpg', category: 'carpets', subcategory: 'shaggy' },
+    { name: 'Luxury Bedcovers', image: '/Luxury-Bed-Set.jpg', category: 'bedcovers', subcategory: 'luxury-bed-sets' },
+    { name: 'Roman Blinds', image: '/Roman-Blind.jpg', category: 'blinds', subcategory: 'roman' },
+    { name: 'Sofa Fabrics', image: '/Upholstery-Sofa-Fabrics.jpg', category: 'upholstery', subcategory: 'sofa-fabrics' },
+    { name: 'Window Treatments', image: '/Window-Treatment.jpg', category: 'other-solutions', subcategory: 'window-treatment' },
   ];
 
   const whyChooseUs = [
@@ -94,17 +99,18 @@ const Home = () => {
                   transition={{ delay: 0.6 }}
                   className="flex flex-col sm:flex-row gap-4 justify-center"
                 >
-                  <a
-                    href="#featured-products"
-                    className="bg-gold-600 text-white px-8 py-3 rounded-full font-medium hover:bg-gold-700 transition-all hover:shadow-xl inline-flex items-center justify-center gap-2"
+                  <Link
+                    to="/products"
+                    className="bg-gold-600 text-white px-8 py-3 rounded-full font-medium hover:bg-gold-700 transition-all hover:shadow-xl inline-flex items-center justify-center gap-2 group"
                   >
-                    Explore Collection <ArrowRight size={20} />
-                  </a>
+                    Explore Collection 
+                    <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                  </Link>
                   <Link
                     to="/enquiry"
-                    className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-brown-900 transition-all"
+                    className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-full font-medium hover:bg-white hover:text-brown-900 transition-all group"
                   >
-                    Get a Free Consultation
+                    <span className="group-hover:scale-105 transition-transform">Get a Free Consultation</span>
                   </Link>
                 </motion.div>
               </div>
@@ -117,9 +123,8 @@ const Home = () => {
             <button
               key={index}
               onClick={() => setCurrentSlide(index)}
-              className={`w-3 h-3 rounded-full transition-all ${
-                currentSlide === index ? 'bg-gold-500 w-8' : 'bg-white/50'
-              }`}
+              className={`w-3 h-3 rounded-full transition-all ${currentSlide === index ? 'bg-gold-500 w-8' : 'bg-white/50'
+                }`}
               aria-label={`Go to slide ${index + 1}`}
             />
           ))}
@@ -136,17 +141,17 @@ const Home = () => {
           >
             <h2 className="text-3xl md:text-4xl font-bold text-brown-900 mb-4">About Royal Elegance</h2>
             <p className="text-brown-700 max-w-3xl mx-auto">
-              With over two decades of expertise in luxury interiors, we bring your vision to life with premium fabrics, 
-              expert craftsmanship, and personalized design solutions. Every piece is crafted to perfection, ensuring your 
+              With over two decades of expertise in luxury interiors, we bring your vision to life with premium fabrics,
+              expert craftsmanship, and personalized design solutions. Every piece is crafted to perfection, ensuring your
               space reflects timeless elegance and comfort.
             </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=400&fit=crop', title: 'Luxury Interiors' },
-              { image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=600&h=400&fit=crop', title: 'Expert Craftsmanship' },
-              { image: 'https://images.unsplash.com/photo-1616137466211-f939a420be84?w=600&h=400&fit=crop', title: 'Custom Solutions' },
+              { image: '/Jacguard-Curtain.jpg', title: 'Luxury Interiors' },
+              { image: '/Shaggy-Carpet.jpg', title: 'Expert Craftsmanship' },
+              { image: '/Linen-Bedcover.jpg', title: 'Custom Solutions' },
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -154,9 +159,12 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
+                className="rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
               >
-                <img src={item.image} alt={item.title} className="w-full h-64 object-cover" />
+                <div className="relative">
+                  <img src={item.image} alt={item.title} className="w-full h-64 object-cover" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
                 <div className="p-4 bg-white">
                   <h3 className="text-xl font-bold text-brown-900">{item.title}</h3>
                 </div>
@@ -188,8 +196,8 @@ const Home = () => {
                 transition={{ delay: index * 0.1 }}
                 className="group"
               >
-                <Link to={`/products/${product.category}/${product.subcategory}`}>
-                  <div className="relative overflow-hidden rounded-lg shadow-lg">
+                <Link to={`/subcategories/${product.category}/${product.subcategory}`}>
+                  <div className="relative overflow-hidden rounded-lg shadow-lg transform group-hover:-translate-y-2 transition-all duration-300">
                     <img
                       src={product.image}
                       alt={product.name}
@@ -205,7 +213,7 @@ const Home = () => {
                     </div>
                   </div>
                   <div className="mt-4 text-center">
-                    <h3 className="text-xl font-bold text-brown-900">{product.name}</h3>
+                    <h3 className="text-xl font-bold text-brown-900 group-hover:text-gold-600 transition-colors">{product.name}</h3>
                   </div>
                 </Link>
               </motion.div>
@@ -234,12 +242,12 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="text-center"
+                className="text-center group"
               >
-                <div className="bg-gold-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="bg-gold-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                   <item.icon size={32} />
                 </div>
-                <h3 className="text-xl font-bold mb-2">{item.title}</h3>
+                <h3 className="text-xl font-bold mb-2 group-hover:text-gold-300 transition-colors">{item.title}</h3>
                 <p className="text-gold-200">{item.description}</p>
               </motion.div>
             ))}
@@ -267,7 +275,7 @@ const Home = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-white p-6 rounded-lg shadow-lg"
+                className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
               >
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -283,9 +291,10 @@ const Home = () => {
           <div className="text-center mt-8">
             <Link
               to="/testimonials"
-              className="inline-flex items-center gap-2 text-gold-600 font-medium hover:text-gold-700 transition-colors"
+              className="inline-flex items-center gap-2 text-gold-600 font-medium hover:text-gold-700 transition-colors group"
             >
-              View All Testimonials <ArrowRight size={20} />
+              <span className="group-hover:scale-105 transition-transform">View All Testimonials</span>
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
@@ -302,9 +311,10 @@ const Home = () => {
             <p className="text-xl mb-8">Get a free consultation and bring your vision to life</p>
             <Link
               to="/enquiry"
-              className="bg-white text-gold-700 px-8 py-3 rounded-full font-bold hover:bg-brown-100 transition-all inline-flex items-center gap-2 hover:shadow-xl"
+              className="bg-white text-gold-700 px-8 py-3 rounded-full font-bold hover:bg-brown-100 transition-all inline-flex items-center gap-2 hover:shadow-xl group"
             >
-              Get Started Now <ArrowRight size={20} />
+              <span className="group-hover:scale-105 transition-transform">Get Started Now</span>
+              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
         </div>

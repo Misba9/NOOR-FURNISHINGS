@@ -1,46 +1,39 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Check, Star } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 
-const ProductPage = () => {
-  const { category, subcategory } = useParams();
-
-  const formatTitle = (str) => {
-    return str.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-  };
-
-  const categoryTitle = formatTitle(category);
-  const subcategoryTitle = formatTitle(subcategory);
-
+const WeddingBedSets = () => {
   const productImages = [
-    'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1616486045952-0b45b12a0a1d?w=600&h=400&fit=crop',
+    'https://images.unsplash.com/photo-1615529162924-f8605388463a?w=600&h=400&fit=crop',
+    'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&h=400&fit=crop',
   ];
 
   const features = [
-    'Premium quality imported fabric',
-    'Custom sizing available',
-    'Professional installation included',
+    'Special collections for newlyweds and celebrations',
+    'Premium quality fabrics for lasting comfort',
+    'Available in various sizes and styles',
     'Easy maintenance and cleaning',
     '2-year warranty',
-    'Wide range of colors and patterns',
-    'UV resistant and fade-proof',
-    'Expert consultation provided',
+    'Wide range of elegant designs',
+    'Hypoallergenic materials',
+    'Luxurious finishing touches',
   ];
 
   const relatedProducts = [
-    { name: 'Jacquard Curtains', image: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=400&h=300&fit=crop', link: '/products/curtains/jacquard' },
-    { name: 'Shaggy Carpets', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=300&fit=crop', link: '/products/carpets/shaggy' },
-    { name: 'Roman Blinds', image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop', link: '/products/blinds/roman' },
+    { name: 'Double Bed Bedcovers', image: 'https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?w=600&h=400&fit=crop', link: '/subcategories/bedcovers/double-bed' },
+    { name: 'Fitted Bedcovers', image: 'https://images.unsplash.com/photo-1615529162924-f8605388463a?w=600&h=400&fit=crop', link: '/subcategories/bedcovers/fitted-bedcovers' },
+    { name: 'Luxury Bed Sets', image: 'https://images.unsplash.com/photo-1615529162924-f8605388463a?w=600&h=400&fit=crop', link: '/subcategories/bedcovers/luxury-bed-sets' },
   ];
 
   return (
     <div>
-      <section className="relative h-64 overflow-hidden">
+      <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src={productImages[0]}
-          alt={subcategoryTitle}
+          src="https://images.unsplash.com/photo-1616486045952-0b45b12a0a1d?w=1920&h=1080&fit=crop"
+          alt="Wedding Bed Sets"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 z-20 flex items-center justify-center">
@@ -49,8 +42,8 @@ const ProductPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center text-white"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">{subcategoryTitle}</h1>
-            <p className="text-xl text-gold-200">{categoryTitle}</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">Wedding Bed Sets</h1>
+            <p className="text-xl text-gold-200">Special Collections for Newlyweds and Celebrations</p>
           </motion.div>
         </div>
       </section>
@@ -71,7 +64,7 @@ const ProductPage = () => {
                   >
                     <img
                       src={image}
-                      alt={`${subcategoryTitle} ${index + 1}`}
+                      alt={`Wedding Bed Sets ${index + 1}`}
                       className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
                     />
                   </motion.div>
@@ -85,21 +78,13 @@ const ProductPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={20} className="fill-gold-500 text-gold-500" />
-                    ))}
-                  </div>
-                  <span className="text-brown-700">(500+ reviews)</span>
-                </div>
-
-                <h2 className="text-3xl font-bold text-brown-900 mb-4">{subcategoryTitle}</h2>
+                <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Wedding Bed Sets</h2>
                 
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Transform your space with our premium {subcategoryTitle.toLowerCase()}. Crafted with the finest materials 
-                  and expert craftsmanship, our products combine luxury, durability, and timeless elegance. Perfect for 
-                  both residential and commercial spaces.
+                  Celebrate your special day with our exquisite wedding bed sets, featuring elegant designs 
+                  and luxurious fabrics that create a romantic atmosphere for your new life together. 
+                  These carefully curated collections combine timeless beauty with exceptional comfort 
+                  for the most important moments in your home.
                 </p>
 
                 <div className="bg-brown-50 p-6 rounded-lg mb-6">
@@ -143,31 +128,34 @@ const ProductPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-brown-900 mb-4">Product Details</h2>
-            <p className="text-brown-700">Everything you need to know about our {subcategoryTitle.toLowerCase()}</p>
+            <p className="text-brown-700">Everything you need to know about our wedding bed sets</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium imported fabrics that are durable, fade-resistant, and easy to maintain. 
-                Each piece is carefully selected for quality and longevity.
+                Made from premium quality fabrics selected for their elegance, comfort, and durability. 
+                These materials are chosen to create a luxurious feel while maintaining their appearance 
+                and quality over time, making them perfect for your special occasion.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in custom sizes, colors, and patterns to match your unique style and requirements. 
-                Our team provides expert guidance for perfect selections.
+                Available in standard sizes with custom options for unique mattress dimensions. 
+                Our team provides expert guidance for selecting the perfect wedding bed set that 
+                complements your bedroom decor and matches your special day's theme.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
+              <h3 className="text-xl font-bold text-brown-900 mb-3">Care Instructions</h3>
               <p className="text-brown-700">
-                Professional installation included with precise measurements and expert fitting. 
-                Our experienced team ensures flawless results every time.
+                Easy to maintain with machine washable options. Our wedding bed sets are designed for 
+                convenient care while maintaining their quality and appearance. Specific care instructions 
+                are provided with each product to ensure longevity and preserve the luxurious finish.
               </p>
             </div>
           </div>
@@ -183,7 +171,7 @@ const ProductPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-brown-900 mb-4">You May Also Like</h2>
-            <p className="text-brown-700">Explore more of our premium collection</p>
+            <p className="text-brown-700">Explore more of our bedcover collection</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -224,4 +212,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default WeddingBedSets;

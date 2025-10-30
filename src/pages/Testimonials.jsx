@@ -8,7 +8,7 @@ const Testimonials = () => {
       name: 'Priya Sharma',
       location: 'Jubilee Hills, Hyderabad',
       rating: 5,
-      image: 'https://i.pravatar.cc/150?img=1',
+      image: '/Jacguard-Curtain.jpg',
       text: 'Absolutely stunning curtains! The quality is exceptional and the installation was seamless. The team was professional, courteous, and completed everything on time. I highly recommend Royal Elegance for anyone looking for premium interior solutions.',
       product: 'Jacquard Curtains',
     },
@@ -16,7 +16,7 @@ const Testimonials = () => {
       name: 'Rajesh Kumar',
       location: 'Banjara Hills, Hyderabad',
       rating: 5,
-      image: 'https://i.pravatar.cc/150?img=13',
+      image: '/Shaggy-Carpet.jpg',
       text: 'The team helped us choose the perfect carpet for our living room. Their expertise and attention to detail is unmatched. The carpet quality is superb and has transformed our entire space. Professional service from start to finish!',
       product: 'Shaggy Carpet',
     },
@@ -24,7 +24,7 @@ const Testimonials = () => {
       name: 'Anita Reddy',
       location: 'Gachibowli, Hyderabad',
       rating: 5,
-      image: 'https://i.pravatar.cc/150?img=5',
+      image: '/Linen-Curtain.jpg',
       text: 'Beautiful bedcovers that transformed our bedroom. The luxury fabric feels amazing and the craftsmanship is top-notch. Worth every penny! The entire experience was smooth and the team was very accommodating to our needs.',
       product: 'Luxury Bed Sets',
     },
@@ -32,7 +32,7 @@ const Testimonials = () => {
       name: 'Vikram Patel',
       location: 'Madhapur, Hyderabad',
       rating: 5,
-      image: 'https://i.pravatar.cc/150?img=12',
+      image: '/Eyelet-Curtains.jpg',
       text: 'We got Roman blinds installed in our office and the results are fantastic. The quality of materials used is excellent and they function perfectly. Royal Elegance delivered exactly what we wanted within our budget and timeline.',
       product: 'Roman Blinds',
     },
@@ -40,7 +40,7 @@ const Testimonials = () => {
       name: 'Sneha Iyer',
       location: 'Kondapur, Hyderabad',
       rating: 5,
-      image: 'https://i.pravatar.cc/150?img=9',
+      image: '/Blackout-Curtain.jpg',
       text: 'Outstanding service and premium quality products! I ordered custom blackout curtains and the entire process was hassle-free. The curtains block light perfectly and look absolutely elegant. Highly satisfied with my purchase!',
       product: 'Blackout Curtains',
     },
@@ -48,7 +48,7 @@ const Testimonials = () => {
       name: 'Arjun Mehta',
       location: 'Hitech City, Hyderabad',
       rating: 5,
-      image: 'https://i.pravatar.cc/150?img=14',
+      image: '/Velvet-Curtain.jpg',
       text: 'The sofa fabrics we selected are simply beautiful. The texture and color are exactly what we wanted. The team provided excellent guidance and the installation was perfect. Truly a premium experience from a premium brand.',
       product: 'Sofa Upholstery',
     },
@@ -56,7 +56,7 @@ const Testimonials = () => {
       name: 'Lakshmi Naidu',
       location: 'Kukatpally, Hyderabad',
       rating: 5,
-      image: 'https://i.pravatar.cc/150?img=10',
+      image: '/Linen-Curtain.jpg',
       text: 'I am extremely happy with the linen curtains I purchased. The quality is superb and they add such elegance to my home. The customer service was excellent - they helped me choose the right style and color. Definitely recommend!',
       product: 'Linen Curtains',
     },
@@ -64,7 +64,7 @@ const Testimonials = () => {
       name: 'Karthik Rao',
       location: 'Begumpet, Hyderabad',
       rating: 5,
-      image: 'https://i.pravatar.cc/150?img=15',
+      image: '/Jacguard-Curtain.jpg',
       text: 'Best decision we made for our new home! Got curtains, carpets, and bedcovers - everything is of premium quality. The team is very professional and the after-sales service is commendable. Worth the investment!',
       product: 'Complete Home Makeover',
     },
@@ -72,7 +72,7 @@ const Testimonials = () => {
       name: 'Divya Krishnan',
       location: 'Miyapur, Hyderabad',
       rating: 5,
-      image: 'https://i.pravatar.cc/150?img=20',
+      image: '/Sheer-Elegance-Curtain.jpg',
       text: 'The zebra blinds in my bedroom are perfect! They provide excellent light control and privacy. The installation was quick and clean. Royal Elegance has earned a loyal customer. Will definitely return for future projects!',
       product: 'Zebra Blinds',
     },
@@ -83,7 +83,7 @@ const Testimonials = () => {
       <section className="relative h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=1920&h=600&fit=crop"
+          src="/Jacguard-Curtain.jpg"
           alt="Testimonials"
           className="w-full h-full object-cover"
         />
@@ -167,6 +167,79 @@ const Testimonials = () => {
               Get Started
             </a>
           </motion.div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-brown-900 mb-4">Our Premium Collections</h2>
+            <p className="text-brown-700 max-w-3xl mx-auto">
+              Discover the quality that our customers love
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-brown-50 rounded-lg overflow-hidden shadow-md"
+            >
+              <img src="/Jacguard-Curtain.jpg" alt="Curtains Collection" className="w-full h-48 object-cover" />
+              <div className="p-4">
+                <h3 className="font-bold text-brown-900">Curtains</h3>
+                <p className="text-sm text-brown-700">Premium fabrics</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-brown-50 rounded-lg overflow-hidden shadow-md"
+            >
+              <img src="/Shaggy-Carpet.jpg" alt="Carpets Collection" className="w-full h-48 object-cover" />
+              <div className="p-4">
+                <h3 className="font-bold text-brown-900">Carpets</h3>
+                <p className="text-sm text-brown-700">Luxury comfort</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-brown-50 rounded-lg overflow-hidden shadow-md"
+            >
+              <img src="/Linen-Curtain.jpg" alt="Bedcovers Collection" className="w-full h-48 object-cover" />
+              <div className="p-4">
+                <h3 className="font-bold text-brown-900">Bedcovers</h3>
+                <p className="text-sm text-brown-700">Elegant bedding</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3 }}
+              className="bg-brown-50 rounded-lg overflow-hidden shadow-md"
+            >
+              <img src="/Eyelet-Curtains.jpg" alt="Blinds Collection" className="w-full h-48 object-cover" />
+              <div className="p-4">
+                <h3 className="font-bold text-brown-900">Blinds</h3>
+                <p className="text-sm text-brown-700">Modern solutions</p>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
     </div>

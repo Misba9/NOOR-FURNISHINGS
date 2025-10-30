@@ -1,46 +1,39 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Check, Star } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 
-const ProductPage = () => {
-  const { category, subcategory } = useParams();
-
-  const formatTitle = (str) => {
-    return str.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-  };
-
-  const categoryTitle = formatTitle(category);
-  const subcategoryTitle = formatTitle(subcategory);
-
+const PP = () => {
   const productImages = [
-    'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&h=400&fit=crop',
+    '/Shaggy-Carpet.jpg',
+    'https://images.unsplash.com/photo-1584432410742-9b0b1e2c6bdc?w=600&h=400&fit=crop',
   ];
 
   const features = [
-    'Premium quality imported fabric',
-    'Custom sizing available',
+    'Durable polypropylene fibers for high-traffic areas',
+    'Stain-resistant and easy to clean',
+    'Available in various sizes and shapes',
     'Professional installation included',
     'Easy maintenance and cleaning',
     '2-year warranty',
     'Wide range of colors and patterns',
     'UV resistant and fade-proof',
-    'Expert consultation provided',
   ];
 
   const relatedProducts = [
-    { name: 'Jacquard Curtains', image: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=400&h=300&fit=crop', link: '/products/curtains/jacquard' },
-    { name: 'Shaggy Carpets', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=300&fit=crop', link: '/products/carpets/shaggy' },
-    { name: 'Roman Blinds', image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop', link: '/products/blinds/roman' },
+    { name: 'Shaggy Carpets', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/shaggy' },
+    { name: 'Turkish Carpets', image: 'https://images.unsplash.com/photo-1584432410742-9b0b1e2c6bdc?w=600&h=400&fit=crop', link: '/subcategories/carpets/turkish' },
+    { name: 'Runners', image: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=600&h=400&fit=crop', link: '/subcategories/carpets/runners' },
   ];
 
   return (
     <div>
-      <section className="relative h-64 overflow-hidden">
+      <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src={productImages[0]}
-          alt={subcategoryTitle}
+          src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&h=1080&fit=crop"
+          alt="PP Carpets"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 z-20 flex items-center justify-center">
@@ -49,8 +42,8 @@ const ProductPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center text-white"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">{subcategoryTitle}</h1>
-            <p className="text-xl text-gold-200">{categoryTitle}</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">PP Carpets</h1>
+            <p className="text-xl text-gold-200">Durable Polypropylene Fibers for High-Traffic Areas</p>
           </motion.div>
         </div>
       </section>
@@ -71,7 +64,7 @@ const ProductPage = () => {
                   >
                     <img
                       src={image}
-                      alt={`${subcategoryTitle} ${index + 1}`}
+                      alt={`PP Carpets ${index + 1}`}
                       className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
                     />
                   </motion.div>
@@ -85,21 +78,12 @@ const ProductPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={20} className="fill-gold-500 text-gold-500" />
-                    ))}
-                  </div>
-                  <span className="text-brown-700">(500+ reviews)</span>
-                </div>
-
-                <h2 className="text-3xl font-bold text-brown-900 mb-4">{subcategoryTitle}</h2>
+                <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium PP Carpets</h2>
                 
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Transform your space with our premium {subcategoryTitle.toLowerCase()}. Crafted with the finest materials 
-                  and expert craftsmanship, our products combine luxury, durability, and timeless elegance. Perfect for 
-                  both residential and commercial spaces.
+                  Experience the perfect combination of durability and style with our premium PP (polypropylene) carpets. 
+                  Designed for high-traffic areas, these carpets offer exceptional stain resistance and easy maintenance 
+                  while maintaining their vibrant appearance and soft texture.
                 </p>
 
                 <div className="bg-brown-50 p-6 rounded-lg mb-6">
@@ -143,23 +127,24 @@ const ProductPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-brown-900 mb-4">Product Details</h2>
-            <p className="text-brown-700">Everything you need to know about our {subcategoryTitle.toLowerCase()}</p>
+            <p className="text-brown-700">Everything you need to know about our PP carpets</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium imported fabrics that are durable, fade-resistant, and easy to maintain. 
-                Each piece is carefully selected for quality and longevity.
+                Made from high-quality polypropylene fibers that are inherently stain-resistant and easy to clean. 
+                These synthetic materials are designed for durability in high-traffic areas while maintaining 
+                their color and texture over time.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in custom sizes, colors, and patterns to match your unique style and requirements. 
-                Our team provides expert guidance for perfect selections.
+                Available in custom sizes and a wide range of colors and patterns to perfectly match your decor. 
+                Our team provides expert guidance for selecting the perfect PP carpet for your space and lifestyle.
               </p>
             </div>
 
@@ -167,7 +152,8 @@ const ProductPage = () => {
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
                 Professional installation included with precise measurements and expert fitting. 
-                Our experienced team ensures flawless results every time.
+                Our experienced team ensures flawless results that maximize the durability and appearance 
+                of PP carpets in your space.
               </p>
             </div>
           </div>
@@ -183,7 +169,7 @@ const ProductPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-brown-900 mb-4">You May Also Like</h2>
-            <p className="text-brown-700">Explore more of our premium collection</p>
+            <p className="text-brown-700">Explore more of our carpet collection</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -224,4 +210,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default PP;

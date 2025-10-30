@@ -53,7 +53,7 @@ const FAQ = () => {
       <section className="relative h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1920&h=600&fit=crop"
+          src="/Jacguard-Curtain.jpg"
           alt="FAQ"
           className="w-full h-full object-cover"
         />
@@ -141,6 +141,71 @@ const FAQ = () => {
               Contact Us
             </a>
           </motion.div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Quality Products</h2>
+            <p className="text-brown-700 max-w-3xl mx-auto">
+              Discover why thousands of customers trust us for their interior needs
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="text-center"
+            >
+              <div className="bg-brown-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                <img src="/Shaggy-Carpet.jpg" alt="Premium Carpets" className="w-16 h-16 object-cover rounded-full" />
+              </div>
+              <h3 className="text-xl font-bold text-brown-900 mb-3">Premium Carpets</h3>
+              <p className="text-brown-700">
+                Luxurious carpets with superior comfort and durability for your living spaces.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="text-center"
+            >
+              <div className="bg-brown-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                <img src="/Linen-Curtain.jpg" alt="Elegant Curtains" className="w-16 h-16 object-cover rounded-full" />
+              </div>
+              <h3 className="text-xl font-bold text-brown-900 mb-3">Elegant Curtains</h3>
+              <p className="text-brown-700">
+                Stylish window treatments that enhance your space with sophistication.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="text-center"
+            >
+              <div className="bg-brown-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
+                <img src="/Velvet-Curtain.jpg" alt="Custom Solutions" className="w-16 h-16 object-cover rounded-full" />
+              </div>
+              <h3 className="text-xl font-bold text-brown-900 mb-3">Custom Solutions</h3>
+              <p className="text-brown-700">
+                Tailored interior solutions designed to match your unique style and needs.
+              </p>
+            </motion.div>
+          </div>
         </div>
       </section>
     </div>

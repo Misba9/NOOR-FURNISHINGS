@@ -22,7 +22,7 @@ const About = () => {
       <section className="relative h-96 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1920&h=600&fit=crop"
+          src="/Jacguard-Curtain.jpg"
           alt="About Us"
           className="w-full h-full object-cover"
         />
@@ -70,22 +70,22 @@ const About = () => {
               className="grid grid-cols-2 gap-4"
             >
               <img
-                src="https://images.unsplash.com/photo-1616137466211-f939a420be84?w=600&h=400&fit=crop"
+                src="/Shaggy-Carpet.jpg"
                 alt="Our Work 1"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?w=600&h=400&fit=crop"
+                src="/Linen-Curtain.jpg"
                 alt="Our Work 2"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
               <img
-                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&h=400&fit=crop"
+                src="/Velvet-Curtain.jpg"
                 alt="Our Work 3"
                 className="rounded-lg shadow-lg w-full h-64 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=400&fit=crop"
+                src="/Eyelet-Curtains.jpg"
                 alt="Our Work 4"
                 className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
               />
@@ -198,15 +198,15 @@ const About = () => {
       <section className="py-16 bg-gradient-to-r from-gold-600 to-gold-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Join Our Journey</h2>
-            <p className="text-xl mb-8">Experience the Royal Elegance difference today</p>
+            <h2 className="text-4xl font-bold mb-4">Ready to Transform Your Space?</h2>
+            <p className="text-xl mb-8">Join hundreds of satisfied customers who trust us with their interiors</p>
             <a
-              href="/enquiry"
-              className="bg-white text-gold-700 px-8 py-3 rounded-full font-bold hover:bg-brown-100 transition-all inline-block"
+              href="/contact"
+              className="bg-white text-gold-700 px-8 py-3 rounded-full font-bold hover:bg-brown-100 transition-all inline-flex items-center gap-2"
             >
               Get in Touch
             </a>

@@ -1,46 +1,39 @@
 import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Check, Star } from 'lucide-react';
+import { ArrowRight, Check } from 'lucide-react';
 
-const ProductPage = () => {
-  const { category, subcategory } = useParams();
-
-  const formatTitle = (str) => {
-    return str.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-  };
-
-  const categoryTitle = formatTitle(category);
-  const subcategoryTitle = formatTitle(subcategory);
-
+const Runners = () => {
   const productImages = [
-    'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&h=600&fit=crop',
+    'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=600&h=400&fit=crop',
+    '/Shaggy-Carpet.jpg',
+    'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&h=400&fit=crop',
   ];
 
   const features = [
-    'Premium quality imported fabric',
-    'Custom sizing available',
+    'Long and narrow carpets for hallways and corridors',
+    'Durable materials for high-traffic areas',
+    'Available in various sizes and shapes',
     'Professional installation included',
     'Easy maintenance and cleaning',
     '2-year warranty',
-    'Wide range of colors and patterns',
-    'UV resistant and fade-proof',
-    'Expert consultation provided',
+    'Wide range of designs and colors',
+    'Reduces noise and adds warmth',
   ];
 
   const relatedProducts = [
-    { name: 'Jacquard Curtains', image: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=400&h=300&fit=crop', link: '/products/curtains/jacquard' },
-    { name: 'Shaggy Carpets', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400&h=300&fit=crop', link: '/products/carpets/shaggy' },
-    { name: 'Roman Blinds', image: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=400&h=300&fit=crop', link: '/products/blinds/roman' },
+    { name: 'Shaggy Carpets', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/shaggy' },
+    { name: 'PP Carpets', image: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&h=400&fit=crop', link: '/subcategories/carpets/pp' },
+    { name: 'Turkish Carpets', image: 'https://images.unsplash.com/photo-1584432410742-9b0b1e2c6bdc?w=600&h=400&fit=crop', link: '/subcategories/carpets/turkish' },
   ];
 
   return (
     <div>
-      <section className="relative h-64 overflow-hidden">
+      <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src={productImages[0]}
-          alt={subcategoryTitle}
+          src="https://images.unsplash.com/photo-1593062096033-9a26b09da705?w=1920&h=1080&fit=crop"
+          alt="Runners"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 z-20 flex items-center justify-center">
@@ -49,8 +42,8 @@ const ProductPage = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center text-white"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-2">{subcategoryTitle}</h1>
-            <p className="text-xl text-gold-200">{categoryTitle}</p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-2">Runners</h1>
+            <p className="text-xl text-gold-200">Long and Narrow Carpets for Hallways and Corridors</p>
           </motion.div>
         </div>
       </section>
@@ -71,7 +64,7 @@ const ProductPage = () => {
                   >
                     <img
                       src={image}
-                      alt={`${subcategoryTitle} ${index + 1}`}
+                      alt={`Runners ${index + 1}`}
                       className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
                     />
                   </motion.div>
@@ -85,21 +78,12 @@ const ProductPage = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
               >
-                <div className="flex items-center gap-2 mb-4">
-                  <div className="flex gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} size={20} className="fill-gold-500 text-gold-500" />
-                    ))}
-                  </div>
-                  <span className="text-brown-700">(500+ reviews)</span>
-                </div>
-
-                <h2 className="text-3xl font-bold text-brown-900 mb-4">{subcategoryTitle}</h2>
+                <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Runners</h2>
                 
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Transform your space with our premium {subcategoryTitle.toLowerCase()}. Crafted with the finest materials 
-                  and expert craftsmanship, our products combine luxury, durability, and timeless elegance. Perfect for 
-                  both residential and commercial spaces.
+                  Enhance your hallways and corridors with our premium runners, designed to provide comfort, 
+                  style, and functionality in long, narrow spaces. These carpets reduce noise, add warmth, 
+                  and create a cohesive design flow throughout your home.
                 </p>
 
                 <div className="bg-brown-50 p-6 rounded-lg mb-6">
@@ -143,23 +127,25 @@ const ProductPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-brown-900 mb-4">Product Details</h2>
-            <p className="text-brown-700">Everything you need to know about our {subcategoryTitle.toLowerCase()}</p>
+            <p className="text-brown-700">Everything you need to know about our runners</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium imported fabrics that are durable, fade-resistant, and easy to maintain. 
-                Each piece is carefully selected for quality and longevity.
+                Made from durable materials specifically designed for high-traffic hallway areas. 
+                These materials are selected for their ability to withstand constant foot traffic 
+                while maintaining their appearance and providing comfort.
               </p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in custom sizes, colors, and patterns to match your unique style and requirements. 
-                Our team provides expert guidance for perfect selections.
+                Available in custom lengths and widths to perfectly fit your hallway dimensions. 
+                Our team provides expert guidance for selecting the perfect runner that complements 
+                your existing decor and maximizes the visual impact of your space.
               </p>
             </div>
 
@@ -167,7 +153,8 @@ const ProductPage = () => {
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
                 Professional installation included with precise measurements and expert fitting. 
-                Our experienced team ensures flawless results every time.
+                Our experienced team ensures flawless results that showcase the beauty and functionality 
+                of runners in your hallway or corridor.
               </p>
             </div>
           </div>
@@ -183,7 +170,7 @@ const ProductPage = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl font-bold text-brown-900 mb-4">You May Also Like</h2>
-            <p className="text-brown-700">Explore more of our premium collection</p>
+            <p className="text-brown-700">Explore more of our carpet collection</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -224,4 +211,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default Runners;

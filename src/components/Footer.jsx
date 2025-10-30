@@ -6,12 +6,24 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-gradient-to-b from-brown-900 to-brown-950 text-gold-100">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-gradient-to-b from-brown-900 to-brown-950 text-gold-100 relative overflow-hidden">
+      {/* Enhanced decorative background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute top-10 left-10 w-32 h-32 rounded-full bg-gold-500 blur-3xl"></div>
+        <div className="absolute bottom-20 right-10 w-48 h-48 rounded-full bg-gold-600 blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-brown-700 blur-2xl"></div>
+      </div>
+      
+      <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Sparkles className="text-gold-500 w-6 h-6" />
+              <div className="relative">
+                <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold-500 to-gold-700 flex items-center justify-center">
+                  <Sparkles className="text-white w-5 h-5" />
+                </div>
+                <div className="absolute -top-1 -right-1 w-2 h-2 bg-gold-400 rounded-full animate-pulse"></div>
+              </div>
               <div className="flex flex-col">
                 <span className="text-xl font-bold text-white">NOOR FURNISHINGS</span>
                 <span className="text-xs text-gold-400 tracking-widest">PREMIUM INTERIORS</span>
@@ -20,7 +32,7 @@ const Footer = () => {
             <p className="text-sm mb-4">
               Transform your space with premium curtains, carpets, and interior solutions crafted with luxury fabrics and expert craftsmanship.
             </p>
-            {/* <div className="flex gap-4">
+            <div className="flex gap-4">
               <a href="#" className="hover:text-gold-400 transition-all hover:scale-110" aria-label="Facebook">
                 <Facebook size={20} />
               </a>
@@ -33,9 +45,9 @@ const Footer = () => {
               <a href="#" className="hover:text-gold-400 transition-all hover:scale-110" aria-label="LinkedIn">
                 <Linkedin size={20} />
               </a>
-            </div> */}
+            </div>
 
-               <div className="mt-6">
+            <div className="mt-6">
               <h4 className="text-white font-semibold mb-2">Newsletter</h4>
               <form className="flex gap-2">
                 <input
@@ -102,7 +114,16 @@ const Footer = () => {
               </li>
             </ul>
 
-         
+            {/* Enhanced decorative image placeholder */}
+            <div className="mt-6 rounded-lg overflow-hidden border-2 border-gold-600 shadow-lg transform hover:scale-105 transition-transform duration-300">
+              <div className="bg-gradient-to-r from-gold-500/20 to-gold-700/20 h-32 flex items-center justify-center relative">
+                <div className="absolute inset-0 bg-[url('/Jacguard-Curtain.jpg')] bg-cover bg-center opacity-20"></div>
+                <div className="text-center relative z-10">
+                  <Sparkles className="text-gold-400 w-8 h-8 mx-auto mb-2" />
+                  <p className="text-gold-300 text-sm font-medium">Premium Quality</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

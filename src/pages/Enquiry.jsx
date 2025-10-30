@@ -49,7 +49,7 @@ const Enquiry = () => {
       <section className="relative h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1920&h=600&fit=crop"
+          src="/Jacguard-Curtain.jpg"
           alt="Get Enquiry"
           className="w-full h-full object-cover"
         />
@@ -204,20 +204,85 @@ const Enquiry = () => {
 
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-            <div className="p-6">
-              <div className="text-4xl font-bold text-gold-600 mb-2">24 Hours</div>
-              <p className="text-brown-700">Response Time</p>
-            </div>
-            <div className="p-6">
-              <div className="text-4xl font-bold text-gold-600 mb-2">Free</div>
-              <p className="text-brown-700">Consultation & Quote</p>
-            </div>
-            <div className="p-6">
-              <div className="text-4xl font-bold text-gold-600 mb-2">Expert</div>
-              <p className="text-brown-700">Design Guidance</p>
-            </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Interior Solutions</h2>
+            <p className="text-brown-700 max-w-3xl mx-auto">
+              Discover the quality and craftsmanship that makes us Hyderabad's preferred choice for luxury interiors
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="bg-brown-50 rounded-lg overflow-hidden shadow-lg"
+            >
+              <img src="/Shaggy-Carpet.jpg" alt="Premium Carpets" className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-brown-900 mb-2">Premium Carpets</h3>
+                <p className="text-brown-700">
+                  Luxurious carpets with superior comfort and durability for your living spaces.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="bg-brown-50 rounded-lg overflow-hidden shadow-lg"
+            >
+              <img src="/Linen-Curtain.jpg" alt="Elegant Curtains" className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-brown-900 mb-2">Elegant Curtains</h3>
+                <p className="text-brown-700">
+                  Stylish window treatments that enhance your space with sophistication.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2 }}
+              className="bg-brown-50 rounded-lg overflow-hidden shadow-lg"
+            >
+              <img src="/Velvet-Curtain.jpg" alt="Custom Solutions" className="w-full h-48 object-cover" />
+              <div className="p-6">
+                <h3 className="text-xl font-bold text-brown-900 mb-2">Custom Solutions</h3>
+                <p className="text-brown-700">
+                  Tailored interior solutions designed to match your unique style and needs.
+                </p>
+              </div>
+            </motion.div>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gradient-to-r from-gold-600 to-gold-700 text-white">
+        <div className="container mx-auto px-4 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold mb-4">Ready to Transform Your Space?</h2>
+            <p className="text-xl mb-8">Get a free consultation and personalized quote</p>
+            <a
+              href="/contact"
+              className="bg-white text-gold-700 px-8 py-3 rounded-full font-bold hover:bg-brown-100 transition-all inline-flex items-center gap-2"
+            >
+              Contact Us Now
+            </a>
+          </motion.div>
         </div>
       </section>
     </div>
