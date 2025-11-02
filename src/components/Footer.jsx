@@ -13,17 +13,18 @@ const Footer = () => {
         <div className="absolute bottom-20 right-10 w-48 h-48 rounded-full bg-gold-600 blur-3xl"></div>
         <div className="absolute top-1/2 left-1/4 w-24 h-24 rounded-full bg-brown-700 blur-2xl"></div>
       </div>
-      
+
       <div className="container mx-auto px-4 py-12 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
               <div className="relative">
                 <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center border-2 border-gold-500">
-                  <img 
-                    src="/logo.png" 
-                    alt="Noor Furnishings Logo" 
+                  <img
+                    src="/logo.png"
+                    alt="NOOR FURNISHINGS Logo - Premium Curtains, Carpets & Interior Solutions in Hyderabad"
                     className="w-6 h-6 object-contain"
+                    loading="lazy"
                   />
                 </div>
                 <div className="absolute -top-1 -right-1 w-2 h-2 bg-gold-400 rounded-full animate-pulse"></div>
@@ -34,19 +35,19 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm mb-4">
-              Transform your space with premium curtains, carpets, and interior solutions crafted with luxury fabrics and expert craftsmanship.
+              Transform your space with premium curtains, carpets, and interior solutions crafted with luxury fabrics and expert craftsmanship in Hyderabad.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="hover:text-gold-400 transition-all hover:scale-110" aria-label="Facebook">
+              <a href="https://www.facebook.com/noorfurnishings" className="hover:text-gold-400 transition-all hover:scale-110" aria-label="Facebook - NOOR FURNISHINGS" target="_blank" rel="noopener noreferrer">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="hover:text-gold-400 transition-all hover:scale-110" aria-label="Instagram">
+              <a href="https://www.instagram.com/noorfurnishings" className="hover:text-gold-400 transition-all hover:scale-110" aria-label="Instagram - NOOR FURNISHINGS" target="_blank" rel="noopener noreferrer">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="hover:text-gold-400 transition-all hover:scale-110" aria-label="Twitter">
+              <a href="#" className="hover:text-gold-400 transition-all hover:scale-110" aria-label="Twitter - NOOR FURNISHINGS">
                 <Twitter size={20} />
               </a>
-              <a href="#" className="hover:text-gold-400 transition-all hover:scale-110" aria-label="LinkedIn">
+              <a href="#" className="hover:text-gold-400 transition-all hover:scale-110" aria-label="LinkedIn - NOOR FURNISHINGS">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -54,14 +55,18 @@ const Footer = () => {
             <div className="mt-6">
               <h4 className="text-white font-semibold mb-2">Newsletter</h4>
               <form className="flex gap-2">
+                <label htmlFor="newsletter-email" className="sr-only">Email for newsletter subscription</label>
                 <input
                   type="email"
+                  id="newsletter-email"
                   placeholder="Your email"
                   className="flex-1 px-3 py-2 rounded bg-brown-800 border border-gold-600 focus:outline-none focus:border-gold-400 text-sm"
+                  aria-label="Email for newsletter subscription"
                 />
                 <button
                   type="submit"
                   className="bg-gold-600 text-white px-4 py-2 rounded hover:bg-gold-700 transition-colors text-sm font-medium"
+                  aria-label="Subscribe to NOOR FURNISHINGS newsletter"
                 >
                   Subscribe
                 </button>

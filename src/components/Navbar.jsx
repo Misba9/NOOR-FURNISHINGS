@@ -41,18 +41,17 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`sticky top-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white shadow-lg' : 'bg-white'
-    }`}>
+    <nav className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white'
+      }`} role="navigation" aria-label="Main navigation">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-2 group">
+          <Link to="/" className="flex items-center gap-2 group" aria-label="NOOR FURNISHINGS Home">
             <div className="relative">
               {/* Logo image with decorative elements */}
               <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center relative border-2 border-gold-500 shadow-md">
-                <img 
-                  src="/logo.png" 
-                  alt="Noor Furnishings Logo" 
+                <img
+                  src="/logo.png"
+                  alt="NOOR FURNISHINGS Logo - Premium Curtains, Carpets & Interior Solutions"
                   className="w-8 h-8 object-contain"
                 />
                 <div className="absolute -top-1 -right-1 w-3 h-3 bg-gold-500 rounded-full animate-pulse"></div>
@@ -70,20 +69,20 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative text-brown-800 font-medium hover:text-gold-600 transition-colors ${
-                  location.pathname === link.path ? 'text-gold-600' : ''
-                }`}
+                className={`relative text-brown-800 font-medium hover:text-gold-600 transition-colors ${location.pathname === link.path ? 'text-gold-600' : ''
+                  }`}
               >
                 {link.name}
                 {location.pathname === link.path && (
                   <motion.div
                     layoutId="navbar-underline"
                     className="absolute -bottom-1 left-0 right-0 h-0.5 bg-gold-600"
+                    aria-hidden="true"
                   />
                 )}
               </Link>
             ))}
-            
+
             <Link
               to="/enquiry"
               className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2"
@@ -95,7 +94,8 @@ const Navbar = () => {
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden text-brown-800 hover:text-gold-600 transition-colors"
-            aria-label="Toggle menu"
+            aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isMobileMenuOpen}
           >
             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -115,14 +115,13 @@ const Navbar = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`text-brown-800 font-medium hover:text-gold-600 transition-colors py-2 ${
-                    location.pathname === link.path ? 'text-gold-600' : ''
-                  }`}
+                  className={`text-brown-800 font-medium hover:text-gold-600 transition-colors py-2 ${location.pathname === link.path ? 'text-gold-600' : ''
+                    }`}
                 >
                   {link.name}
                 </Link>
               ))}
-              
+
               <Link
                 to="/enquiry"
                 className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2.5 rounded-full font-medium text-center hover:shadow-lg transition-all"
