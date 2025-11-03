@@ -136,8 +136,18 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-brown-800 mt-8 pt-6 text-center text-sm">
+        <div className="border-t text-black border-brown-800 mt-8 pt-6 text-center text-sm">
           <p>&copy; {currentYear} NOOR FURNISHINGS. All rights reserved.</p>
+          <p className="mt-2 text-black">
+            Design by <a 
+              href="https://alehsanmt.com/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-gold-400 hover:text-black transition-colors font-bold"
+            >
+              Al-Ehsan Media & Tech
+            </a>
+          </p>
         </div>
       </div>
     </footer>
