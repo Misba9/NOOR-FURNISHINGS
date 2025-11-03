@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const Shaggy = () => {
-  const productImage = '/Shaggy-Carpet.jpg';
+  const productImage = '/Images/Carpets/Shaggy-Carpet.jpg';
 
   const features = [
     'Ultra-soft texture with luxurious deep pile',
@@ -18,9 +18,9 @@ const Shaggy = () => {
   ];
 
   const relatedProducts = [
-    { name: 'PP Carpets', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/pp' },
-    { name: 'Turkish Carpets', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/turkish' },
-    { name: 'Runners', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/runners' },
+    { name: 'PP Carpets', image: '/Images/Carpets/PP-Carpets.jpg', link: '/subcategories/carpets/pp' },
+    { name: 'Turkish Carpets', image: '/Images/Carpets/Turkish-Carpet.jpg', link: '/subcategories/carpets/turkish' },
+    { name: 'Runners', image: '/Images/Carpets/Runner-Carpet.jpg', link: '/subcategories/carpets/runners' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Shaggy = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Shaggy-Carpet.jpg"
+          src="/Images/Carpets/Shaggy-Carpet.jpg"
           alt="Shaggy Carpets"
           className="w-full h-full object-cover"
         />
@@ -69,10 +69,10 @@ const Shaggy = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Shaggy Carpets</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Indulge in the luxurious comfort of our premium shaggy carpets, featuring ultra-soft texture 
-                  and deep pile that creates a cozy, inviting atmosphere. These carpets add warmth, style, 
+                  Indulge in the luxurious comfort of our premium shaggy carpets, featuring ultra-soft texture
+                  and deep pile that creates a cozy, inviting atmosphere. These carpets add warmth, style,
                   and unparalleled comfort to any living space.
                 </p>
 
@@ -124,8 +124,8 @@ const Shaggy = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium quality shaggy fibers that are soft, durable, and resilient. 
-                The deep pile construction provides exceptional comfort underfoot while maintaining 
+                Made from premium quality shaggy fibers that are soft, durable, and resilient.
+                The deep pile construction provides exceptional comfort underfoot while maintaining
                 its luxurious appearance over time.
               </p>
             </div>
@@ -133,7 +133,7 @@ const Shaggy = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in custom sizes and a wide range of colors to perfectly match your decor. 
+                Available in custom sizes and a wide range of colors to perfectly match your decor.
                 Our team provides expert guidance for selecting the perfect shaggy carpet for your space.
               </p>
             </div>
@@ -141,8 +141,8 @@ const Shaggy = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
-                Professional installation included with precise measurements and expert fitting. 
-                Our experienced team ensures flawless results that showcase the luxurious texture 
+                Professional installation included with precise measurements and expert fitting.
+                Our experienced team ensures flawless results that showcase the luxurious texture
                 and deep pile of shaggy carpets.
               </p>
             </div>

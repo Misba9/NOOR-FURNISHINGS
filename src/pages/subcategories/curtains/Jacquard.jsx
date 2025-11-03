@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const Jacquard = () => {
-  const productImage = '/Jacguard-Curtain.jpg';
+  const productImage = '/Images/Curtains/Jacguard-Curtain.jpg';
 
   const features = [
     'Intricate woven patterns with rich textures',
@@ -18,9 +18,9 @@ const Jacquard = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Blackout Curtains', image: '/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
-    { name: 'Linen Curtains', image: '/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
-    { name: 'Sheer Curtains', image: '/Sheer-Elegance-Curtain.jpg', link: '/subcategories/curtains/sheer' },
+    { name: 'Blackout Curtains', image: '/Images/Curtains/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
+    { name: 'Linen Curtains', image: '/Images/Curtains/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
+    { name: 'Sheer Curtains', image: '/Images/Curtains/Sheer-Curtain.jpg', link: '/subcategories/curtains/sheer' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Jacquard = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Jacguard-Curtain.jpg"
+          src="/Images/Curtains/Jacguard-Curtain.jpg"
           alt="Jacquard Curtains"
           className="w-full h-full object-cover"
         />
@@ -69,10 +69,10 @@ const Jacquard = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Jacquard Curtains</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Elevate your space with our premium Jacquard curtains, featuring intricate woven patterns that add 
-                  depth and texture to any room. Crafted with the finest materials and expert craftsmanship, these 
+                  Elevate your space with our premium Jacquard curtains, featuring intricate woven patterns that add
+                  depth and texture to any room. Crafted with the finest materials and expert craftsmanship, these
                   curtains combine luxury, durability, and timeless elegance.
                 </p>
 
@@ -125,7 +125,7 @@ const Jacquard = () => {
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium imported fabrics with intricate woven patterns that are durable, fade-resistant, 
+                Made from premium imported fabrics with intricate woven patterns that are durable, fade-resistant,
                 and easy to maintain. Each piece is carefully selected for quality and longevity.
               </p>
             </div>
@@ -133,7 +133,7 @@ const Jacquard = () => {
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in custom sizes, colors, and patterns to match your unique style and requirements. 
+                Available in custom sizes, colors, and patterns to match your unique style and requirements.
                 Our team provides expert guidance for perfect selections.
               </p>
             </div>
@@ -141,7 +141,7 @@ const Jacquard = () => {
             <div className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 transform hover:-translate-y-1">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
-                Professional installation included with precise measurements and expert fitting. 
+                Professional installation included with precise measurements and expert fitting.
                 Our experienced team ensures flawless results every time.
               </p>
             </div>

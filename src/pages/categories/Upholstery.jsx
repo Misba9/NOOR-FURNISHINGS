@@ -8,13 +8,13 @@ const Upholstery = () => {
   const upholsteryTypes = [
     {
       name: 'Sofa Fabrics',
-      image: '/Upholstery-Sofa-Fabrics.jpg',
+      image: '/Images/Upholstery/Sofa-Fabrics-Upholstery.jpg',
       description: 'Premium fabrics for sofa upholstery and reupholstery',
       link: '/subcategories/upholstery/sofa-fabrics'
     },
     {
       name: 'Cushion Fabrics',
-      image: '/Upholstery-Cushion-Fabric.jpg',
+      image: '/Images/Upholstery/Cushion-Fabric-Upholstery.jpg',
       description: 'Soft and durable materials for decorative cushions',
       link: '/subcategories/upholstery/cushion-fabrics'
     }
@@ -25,7 +25,7 @@ const Upholstery = () => {
     title: "Upholstery Collection - NOOR FURNISHINGS Premium Furniture Fabrics",
     description: "Discover our premium upholstery collection including Sofa Fabrics and Cushion Fabrics. Transform your furniture with style and comfort in Hyderabad.",
     keywords: "upholstery, sofa fabrics, cushion fabrics, furniture fabrics, reupholstery, Hyderabad, premium upholstery",
-    image: "/Upholstery-Sofa-Fabrics.jpg",
+    image: "/Images/Upholstery/Sofa-Fabrics-Upholstery.jpg",
     url: "https://www.noorfurnishings.com/upholstery",
     type: "article",
     canonical: "https://www.noorfurnishings.com/upholstery"
@@ -38,7 +38,7 @@ const Upholstery = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Upholstery-Sofa-Fabrics.jpg"
+            src="/Images/Upholstery/Sofa-Fabrics-Upholstery.jpg"
             alt="Premium Upholstery Collection - NOOR FURNISHINGS Furniture Fabrics"
             className="w-full h-full object-cover"
             loading="eager"

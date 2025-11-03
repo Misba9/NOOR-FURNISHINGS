@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const PVCChickBlinds = () => {
-  const productImage = '/PVC-Chick-Blind.jpg';
+  const productImage = '/Images/Blinds/PVC-Chick-Blind.jpg';
 
   const features = [
     'Durable and moisture-resistant for kitchens and bathrooms',
@@ -19,9 +19,9 @@ const PVCChickBlinds = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Venetian Blinds', image: '/Venetian-Blind.jpg', link: '/subcategories/blinds/venetian' },
-    { name: 'Roman Blinds', image: '/Roman-Blind.jpg', link: '/subcategories/blinds/roman' },
-    { name: 'Roller Blinds', image: '/Roller-Blinds.jpg', link: '/subcategories/blinds/roller' },
+    { name: 'Venetian Blinds', image: '/Images/Blinds/Venetian-Blind.jpg', link: '/subcategories/blinds/venetian' },
+    { name: 'Roman Blinds', image: '/Images/Blinds/Roman-Blind.jpg', link: '/subcategories/blinds/roman' },
+    { name: 'Roller Blinds', image: '/Images/Blinds/Roller-Blinds.jpg', link: '/subcategories/blinds/roller' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const PVCChickBlinds = () => {
     title: "PVC Chick Blinds - Moisture-Resistant Window Coverings",
     description: "Durable PVC chick blinds perfect for kitchens and bathrooms. Moisture-resistant window coverings with privacy and light filtering options in Hyderabad.",
     keywords: "PVC blinds, chick blinds, kitchen blinds, bathroom blinds, moisture resistant blinds, window coverings, Hyderabad blinds",
-    image: "/PVC-Chick-Blind.jpg",
+    image: "/Images/Blinds/PVC-Chick-Blind.jpg",
     url: "https://www.noorfurnishings.com/subcategories/blinds/pvc-chick",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/blinds/pvc-chick"
@@ -42,7 +42,7 @@ const PVCChickBlinds = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/PVC-Chick-Blind.jpg"
+            src="/Images/Blinds/PVC-Chick-Blind.jpg"
             alt="Durable PVC Chick Blinds for Kitchens and Bathrooms - Moisture Resistant"
             className="w-full h-full object-cover"
             loading="eager"

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const Sheer = () => {
-  const productImage = '/Sheer-Elegance-Curtain.jpg';
+  const productImage = '/Images/Curtains/Sheer-Curtain.jpg';
 
   const features = [
     'Light and airy for soft, diffused light',
@@ -18,9 +18,9 @@ const Sheer = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Jacquard Curtains', image: '/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
-    { name: 'Blackout Curtains', image: '/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
-    { name: 'Linen Curtains', image: '/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
+    { name: 'Jacquard Curtains', image: '/Images/Curtains/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
+    { name: 'Blackout Curtains', image: '/Images/Curtains/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
+    { name: 'Linen Curtains', image: '/Images/Curtains/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Sheer = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Sheer-Elegance-Curtain.jpg"
+          src="/Images/Curtains/Sheer-Curtain.jpg"
           alt="Sheer Curtains"
           className="w-full h-full object-cover"
         />
@@ -69,10 +69,10 @@ const Sheer = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Sheer Curtains</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Brighten your space with our premium sheer curtains, designed to filter natural light while 
-                  maintaining privacy. These lightweight curtains add an elegant touch to any room with their 
+                  Brighten your space with our premium sheer curtains, designed to filter natural light while
+                  maintaining privacy. These lightweight curtains add an elegant touch to any room with their
                   delicate fabric and flowing movement.
                 </p>
 
@@ -124,7 +124,7 @@ const Sheer = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium sheer fabrics that are lightweight yet durable. 
+                Made from premium sheer fabrics that are lightweight yet durable.
                 Available in various textures from crisp voile to soft chiffon for different light filtering effects.
               </p>
             </div>
@@ -132,7 +132,7 @@ const Sheer = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in custom sizes and a range of colors to complement your decor. 
+                Available in custom sizes and a range of colors to complement your decor.
                 Perfect for layering with other curtain types for versatile light control.
               </p>
             </div>
@@ -140,7 +140,7 @@ const Sheer = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
-                Professional installation included with precise measurements and expert fitting. 
+                Professional installation included with precise measurements and expert fitting.
                 Our experienced team ensures beautiful draping that showcases the elegant movement of sheer fabric.
               </p>
             </div>

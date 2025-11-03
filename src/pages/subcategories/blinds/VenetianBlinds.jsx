@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const VenetianBlinds = () => {
-  const productImage = '/Venetian-Blind.jpg';
+  const productImage = '/Images/Blinds/Venetian-Blind.jpg';
 
   const features = [
     'Classic horizontal slats for light control',
@@ -19,9 +19,9 @@ const VenetianBlinds = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Roman Blinds', image: '/Roman-Blind.jpg', link: '/subcategories/blinds/roman' },
-    { name: 'Wooden Blinds', image: '/Wooden-Blind.jpg', link: '/subcategories/blinds/wooden' },
-    { name: 'Roller Blinds', image: '/Roller-Blinds.jpg', link: '/subcategories/blinds/roller' },
+    { name: 'Roman Blinds', image: '/Images/Blinds/Roman-Blind.jpg', link: '/subcategories/blinds/roman' },
+    { name: 'Wooden Blinds', image: '/Images/Blinds/Wooden-Blind.jpg', link: '/subcategories/blinds/wooden' },
+    { name: 'Roller Blinds', image: '/Images/Blinds/Roller-Blinds.jpg', link: '/subcategories/blinds/roller' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const VenetianBlinds = () => {
     title: "Venetian Blinds - Classic Horizontal Slats Window Coverings",
     description: "Premium venetian blinds with classic horizontal slats for precise light control and privacy. Timeless window coverings with energy efficient properties in Hyderabad.",
     keywords: "venetian blinds, horizontal blinds, classic blinds, light control blinds, privacy blinds, window coverings, Hyderabad blinds",
-    image: "/Venetian-Blind.jpg",
+    image: "/Images/Blinds/Venetian-Blind.jpg",
     url: "https://www.noorfurnishings.com/subcategories/blinds/venetian",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/blinds/venetian"
@@ -42,7 +42,7 @@ const VenetianBlinds = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Venetian-Blind.jpg"
+            src="/Images/Blinds/Venetian-Blind.jpg"
             alt="Premium Venetian Blinds - Classic Horizontal Slats for Light Control"
             className="w-full h-full object-cover"
             loading="eager"

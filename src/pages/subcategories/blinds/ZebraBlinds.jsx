@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const ZebraBlinds = () => {
-  const productImage = '/Zebra-Blinds.jpg';
+  const productImage = '/Images/Blinds/Zebra-Blinds.jpg';
 
   const features = [
     'Striped fabric for alternating light and privacy',
@@ -19,9 +19,9 @@ const ZebraBlinds = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Venetian Blinds', image: '/Venetian-Blind.jpg', link: '/subcategories/blinds/venetian' },
-    { name: 'Roman Blinds', image: '/Roman-Blind.jpg', link: '/subcategories/blinds/roman' },
-    { name: 'Roller Blinds', image: '/Roller-Blinds.jpg', link: '/subcategories/blinds/roller' },
+    { name: 'Venetian Blinds', image: '/Images/Blinds/Venetian-Blind.jpg', link: '/subcategories/blinds/venetian' },
+    { name: 'Roman Blinds', image: '/Images/Blinds/Roman-Blind.jpg', link: '/subcategories/blinds/roman' },
+    { name: 'Roller Blinds', image: '/Images/Blinds/Roller-Blinds.jpg', link: '/subcategories/blinds/roller' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const ZebraBlinds = () => {
     title: "Zebra Blinds - Striped Fabric Window Coverings",
     description: "Discover premium zebra blinds with alternating striped fabric for flexible light control and privacy. Modern window coverings for contemporary interiors in Hyderabad.",
     keywords: "zebra blinds, striped blinds, window coverings, light control, privacy blinds, modern blinds, Hyderabad blinds",
-    image: "/Zebra-Blinds.jpg",
+    image: "/Images/Blinds/Zebra-Blinds.jpg",
     url: "https://www.noorfurnishings.com/subcategories/blinds/zebra",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/blinds/zebra"
@@ -42,7 +42,7 @@ const ZebraBlinds = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Zebra-Blinds.jpg"
+            src="/Images/Blinds/Zebra-Blinds.jpg"
             alt="Premium Zebra Blinds with Striped Fabric for Light Control and Privacy"
             className="w-full h-full object-cover"
             loading="eager"

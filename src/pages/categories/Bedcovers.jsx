@@ -8,43 +8,43 @@ const Bedcovers = () => {
   const bedcoverTypes = [
     {
       name: 'Double Bed',
-      image: '/Double-bed-bedcover.jpg',
+      image: '/Images/Bedcovers/Double-Bed-Bedcover.jpg',
       description: 'Perfectly sized for double beds with premium comfort',
       link: '/subcategories/bedcovers/double-bed'
     },
     {
       name: 'Fitted Bedcovers',
-      image: '/Fitted-Bedcover.jpg',
+      image: '/Images/Bedcovers/Fitted-Bedcover.jpg',
       description: 'Snug fit with elastic edges for a neat appearance',
       link: '/subcategories/bedcovers/fitted-bedcovers'
     },
     {
       name: 'Linen Bedcovers',
-      image: '/Linen-Bedcover.jpg',
+      image: '/Images/Bedcovers/Linen-Bedcover.jpg',
       description: 'Natural fabric with a relaxed, elegant look',
       link: '/subcategories/bedcovers/linen'
     },
     {
       name: 'Wedding Bed Sets',
-      image: '/Wedding-Bed-Set.jpg',
+      image: '/Images/Bedcovers/Wedding-Bed-Set.jpg',
       description: 'Special collections for newlyweds and celebrations',
       link: '/subcategories/bedcovers/wedding-bed-sets'
     },
     {
       name: 'Luxury Bed Sets',
-      image: '/Luxury-Bed-Set.jpg',
+      image: '/Images/Bedcovers/Luxury-Bed-Set.jpg',
       description: 'Premium collections with exquisite designs',
       link: '/subcategories/bedcovers/luxury-bed-sets'
     },
     {
       name: 'Dohar',
-      image: '/Dohar.jpg',
+      image: '/Images/Bedcovers/Dohar.jpg',
       description: 'Traditional lightweight quilted bedspreads',
       link: '/subcategories/bedcovers/dohar'
     },
     {
       name: 'Blankets',
-      image: '/Blanket.jpg',
+      image: '/Images/Bedcovers/Blanket.jpg',
       description: 'Warm and cozy options for all seasons',
       link: '/subcategories/bedcovers/blankets'
     }
@@ -55,7 +55,7 @@ const Bedcovers = () => {
     title: "Bedcover Collection - NOOR FURNISHINGS Premium Bedding Solutions",
     description: "Explore our premium bedcover collection including Luxury Sets, Wedding Sets, Linen, and Dohar bedspreads. Luxurious bedding for ultimate comfort in Hyderabad.",
     keywords: "bedcovers, bedding, Luxury bed sets, Wedding bed sets, Linen bedcovers, Dohar, Blankets, Hyderabad, premium bedding",
-    image: "/Linen-Bedcover.jpg",
+    image: "/Images/Bedcovers/Linen-Bedcover.jpg",
     url: "https://www.noorfurnishings.com/bedcovers",
     type: "article",
     canonical: "https://www.noorfurnishings.com/bedcovers"
@@ -68,7 +68,7 @@ const Bedcovers = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Linen-Bedcover.jpg"
+            src="/Images/Bedcovers/Linen-Bedcover.jpg"
             alt="Premium Bedcover Collection - NOOR FURNISHINGS Bedding Solutions"
             className="w-full h-full object-cover"
             loading="eager"

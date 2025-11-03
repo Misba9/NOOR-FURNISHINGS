@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const RollerBlinds = () => {
-  const productImage = '/Roller-Blinds.jpg';
+  const productImage = '/Images/Blinds/Roller-Blinds.jpg';
 
   const features = [
     'Simple and sleek with smooth operation',
@@ -19,9 +19,9 @@ const RollerBlinds = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Venetian Blinds', image: '/Venetian-Blind.jpg', link: '/subcategories/blinds/venetian' },
-    { name: 'Roman Blinds', image: '/Roman-Blind.jpg', link: '/subcategories/blinds/roman' },
-    { name: 'Wooden Blinds', image: '/Wooden-Blind.jpg', link: '/subcategories/blinds/wooden' },
+    { name: 'Venetian Blinds', image: '/Images/Blinds/Venetian-Blind.jpg', link: '/subcategories/blinds/venetian' },
+    { name: 'Roman Blinds', image: '/Images/Blinds/Roman-Blind.jpg', link: '/subcategories/blinds/roman' },
+    { name: 'Wooden Blinds', image: '/Images/Blinds/Wooden-Blind.jpg', link: '/subcategories/blinds/wooden' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const RollerBlinds = () => {
     title: "Roller Blinds - Simple and Sleek Window Coverings",
     description: "Premium roller blinds with simple and sleek design for smooth operation. Modern window coverings with privacy and light filtering options in Hyderabad.",
     keywords: "roller blinds, window coverings, simple blinds, sleek blinds, privacy blinds, light filtering blinds, Hyderabad blinds",
-    image: "/Roller-Blinds.jpg",
+    image: "/Images/Blinds/Roller-Blinds.jpg",
     url: "https://www.noorfurnishings.com/subcategories/blinds/roller",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/blinds/roller"
@@ -42,7 +42,7 @@ const RollerBlinds = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Roller-Blinds.jpg"
+            src="/Images/Blinds/Roller-Blinds.jpg"
             alt="Premium Roller Blinds - Simple and Sleek Window Coverings"
             className="w-full h-full object-cover"
             loading="eager"

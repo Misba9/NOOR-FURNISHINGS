@@ -23,7 +23,7 @@ const About = () => {
     title: "About Us - NOOR FURNISHINGS Premium Interior Solutions",
     description: "Learn about NOOR FURNISHINGS, Hyderabad's trusted name in premium curtains, carpets, and interior solutions since 2005. Over 20 years of excellence and craftsmanship.",
     keywords: "about us, interior design, curtains, carpets, blinds, bedcovers, upholstery, Hyderabad, luxury interiors, craftsmanship, customer satisfaction",
-    image: "/Jacguard-Curtain.jpg",
+    image: "/Images/Curtains/Jacguard-Curtain.jpg",
     url: "https://www.noorfurnishings.com/about",
     type: "article",
     canonical: "https://www.noorfurnishings.com/about"
@@ -36,7 +36,7 @@ const About = () => {
         <section className="relative h-96 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Jacguard-Curtain.jpg"
+            src="/Images/Curtains/Jacguard-Curtain.jpg"
             alt="About NOOR FURNISHINGS - Premium Interior Solutions Since 2005"
             className="w-full h-full object-cover"
             loading="eager"
@@ -85,13 +85,13 @@ const About = () => {
                 className="grid grid-cols-2 gap-4"
               >
                 <img
-                  src="/Shaggy-Carpet.jpg"
+                  src="/Images/Carpets/Shaggy-Carpet.jpg"
                   alt="Premium Shaggy Carpets - NOOR FURNISHINGS Work"
                   className="rounded-lg shadow-lg w-full h-64 object-cover"
                   loading="lazy"
                 />
                 <img
-                  src="/Linen-Curtain.jpg"
+                  src="/Images/Curtains/Linen-Curtain.jpg"
                   alt="Linen Curtains - NOOR FURNISHINGS Work"
                   className="rounded-lg shadow-lg w-full h-64 object-cover mt-8"
                   loading="lazy"

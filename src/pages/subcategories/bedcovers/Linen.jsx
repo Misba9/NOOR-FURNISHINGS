@@ -5,11 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const Linen = () => {
-  const productImages = [
-    '/linen-bedcover-1.jpg',
-    '/linen-bedcover-2.jpg',
-    '/linen-bedcover-3.jpg',
-  ];
+  const productImage = '/Images/Bedcovers/Linen-Bedcover.jpg';
 
   const features = [
     'Natural fabric with a relaxed, elegant look',
@@ -23,9 +19,9 @@ const Linen = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Double Bed Bedcovers', image: '/double-bed-bedcover.jpg', link: '/subcategories/bedcovers/double-bed' },
-    { name: 'Fitted Bedcovers', image: '/fitted-bedcover.jpg', link: '/subcategories/bedcovers/fitted-bedcovers' },
-    { name: 'Luxury Bed Sets', image: '/luxury-bed-set.jpg', link: '/subcategories/bedcovers/luxury-bed-sets' },
+    { name: 'Double Bed Bedcovers', image: '/Images/Bedcovers/Double-Bed-Bedcover.jpg', link: '/subcategories/bedcovers/double-bed' },
+    { name: 'Fitted Bedcovers', image: '/Images/Bedcovers/Fitted-Bedcover.jpg', link: '/subcategories/bedcovers/fitted-bedcovers' },
+    { name: 'Luxury Bed Sets', image: '/Images/Bedcovers/Luxury-Bed-Set.jpg', link: '/subcategories/bedcovers/luxury-bed-sets' },
   ];
 
   // SEO data for this page
@@ -33,7 +29,7 @@ const Linen = () => {
     title: "Linen Bedcovers - Natural Fabric with Relaxed Elegance",
     description: "Premium linen bedcovers with natural fabric for a relaxed, elegant look. Hypoallergenic materials and temperature regulating properties for ultimate comfort in Hyderabad.",
     keywords: "linen bedcovers, natural fabric bedcovers, elegant bedcovers, hypoallergenic bedcovers, temperature regulating bedcovers, Hyderabad bedcovers",
-    image: "/linen-bedcover-1.jpg",
+    image: "/Images/Bedcovers/Linen-Bedcover.jpg",
     url: "https://www.noorfurnishings.com/subcategories/bedcovers/linen",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/bedcovers/linen"
@@ -46,7 +42,7 @@ const Linen = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/linen-bedcover-1.jpg"
+            src="/Images/Bedcovers/Linen-Bedcover.jpg"
             alt="Premium Linen Bedcovers - Natural Fabric with Relaxed, Elegant Look"
             className="w-full h-full object-cover"
             loading="eager"
@@ -67,25 +63,19 @@ const Linen = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <div className="grid grid-cols-2 gap-4">
-                  {productImages.map((image, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      className="rounded-lg overflow-hidden shadow-lg"
-                    >
-                      <img
-                        src={image}
-                        alt={`Premium Linen Bedcovers ${index + 1} - NOOR FURNISHINGS`}
-                        className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
-                        loading="lazy"
-                      />
-                    </motion.div>
-                  ))}
-                </div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="rounded-lg overflow-hidden shadow-lg h-full"
+                >
+                  <img
+                    src={productImage}
+                    alt="Premium Linen Bedcovers - NOOR FURNISHINGS"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </motion.div>
               </div>
 
               <div>

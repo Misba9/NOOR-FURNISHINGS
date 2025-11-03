@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const Turkish = () => {
-  const productImage = '/Shaggy-Carpet.jpg';
+  const productImage = '/Images/Carpets/Turkish-Carpet.jpg';
 
   const features = [
     'Traditional craftsmanship with intricate patterns',
@@ -18,9 +18,9 @@ const Turkish = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Shaggy Carpets', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/shaggy' },
-    { name: 'PP Carpets', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/pp' },
-    { name: 'Runners', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/runners' },
+    { name: 'Shaggy Carpets', image: '/Images/Carpets/Shaggy-Carpet.jpg', link: '/subcategories/carpets/shaggy' },
+    { name: 'PP Carpets', image: '/Images/Carpets/PP-Carpets.jpg', link: '/subcategories/carpets/pp' },
+    { name: 'Runners', image: '/Images/Carpets/Runner-Carpet.jpg', link: '/subcategories/carpets/runners' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Turkish = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Shaggy-Carpet.jpg"
+          src="/Images/Carpets/Turkish-Carpet.jpg"
           alt="Turkish Carpets"
           className="w-full h-full object-cover"
         />
@@ -69,10 +69,10 @@ const Turkish = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Turkish Carpets</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Discover the timeless beauty of our premium Turkish carpets, featuring traditional craftsmanship 
-                  and intricate patterns that have been perfected over centuries. These hand-knotted carpets 
+                  Discover the timeless beauty of our premium Turkish carpets, featuring traditional craftsmanship
+                  and intricate patterns that have been perfected over centuries. These hand-knotted carpets
                   showcase the rich cultural heritage of Turkish weaving while adding elegance and warmth to any space.
                 </p>
 
@@ -124,8 +124,8 @@ const Turkish = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium quality wool and silk blends using traditional Turkish weaving techniques. 
-                These materials are selected for their durability, soft texture, and ability to showcase 
+                Made from premium quality wool and silk blends using traditional Turkish weaving techniques.
+                These materials are selected for their durability, soft texture, and ability to showcase
                 the intricate patterns that define Turkish carpets.
               </p>
             </div>
@@ -133,8 +133,8 @@ const Turkish = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in traditional sizes and custom options to perfectly complement your decor. 
-                Our team provides expert guidance for selecting the perfect Turkish carpet that reflects 
+                Available in traditional sizes and custom options to perfectly complement your decor.
+                Our team provides expert guidance for selecting the perfect Turkish carpet that reflects
                 authentic craftsmanship and cultural heritage.
               </p>
             </div>
@@ -142,8 +142,8 @@ const Turkish = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
-                Professional installation included with precise measurements and expert fitting. 
-                Our experienced team ensures flawless results that showcase the intricate beauty 
+                Professional installation included with precise measurements and expert fitting.
+                Our experienced team ensures flawless results that showcase the intricate beauty
                 and traditional craftsmanship of Turkish carpets.
               </p>
             </div>

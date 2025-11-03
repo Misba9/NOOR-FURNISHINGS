@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const Texture = () => {
-  const productImage = '/textured-curtains.jpg';
+  const productImage = '/Images/Curtains/textured-curtains.jpg';
 
   const features = [
     'Unique surface patterns for visual interest',
@@ -19,9 +19,9 @@ const Texture = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Jacquard Curtains', image: '/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
-    { name: 'Blackout Curtains', image: '/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
-    { name: 'Linen Curtains', image: '/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
+    { name: 'Jacquard Curtains', image: '/Images/Curtains/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
+    { name: 'Blackout Curtains', image: '/Images/Curtains/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
+    { name: 'Linen Curtains', image: '/Images/Curtains/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const Texture = () => {
     title: "Textured Curtains - Unique Surface Pattern Curtains",
     description: "Premium textured curtains with unique surface patterns for visual interest. Adds depth and dimension to spaces with custom sizing available in Hyderabad.",
     keywords: "textured curtains, patterned curtains, unique curtains, visual interest curtains, depth curtains, dimension curtains, Hyderabad curtains",
-    image: "/textured-curtains.jpg",
+    image: "/Images/Curtains/textured-curtains.jpg",
     url: "https://www.noorfurnishings.com/subcategories/curtains/texture",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/curtains/texture"
@@ -42,7 +42,7 @@ const Texture = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/textured-curtains.jpg"
+            src="/Images/Curtains/textured-curtains.jpg"
             alt="Premium Textured Curtains with Unique Surface Patterns for Visual Interest"
             className="w-full h-full object-cover"
             loading="eager"

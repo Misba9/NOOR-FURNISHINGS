@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const Valance = () => {
-  const productImage = '/Valance.jpg';
+  const productImage = '/Images/Other-Solutions/Valance.jpg';
 
   const features = [
     'Decorative top treatments for windows',
@@ -19,9 +19,9 @@ const Valance = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Window Treatment', image: '/Window-Treatment.jpg', link: '/subcategories/othersolutions/window-treatment' },
-    { name: 'Fittings', image: '/fittings.jpg', link: '/subcategories/othersolutions/fittings' },
-    { name: 'Curtains', image: '/Jacguard-Curtain.jpg', link: '/curtains' },
+    { name: 'Window Treatment', image: '/Images/Other-Solutions/Window-Treatment.jpg', link: '/subcategories/othersolutions/window-treatment' },
+    { name: 'Fittings', image: '/Images/Other-Solutions/fittings.jpg', link: '/subcategories/othersolutions/fittings' },
+    { name: 'Curtains', image: '/Images/Curtains/Jacguard-Curtain.jpg', link: '/subcategories/curtains' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const Valance = () => {
     title: "Valance - Decorative Top Treatments for Windows",
     description: "Premium valance with decorative top treatments for windows. Enhances architectural features with professional installation and 2-year warranty in Hyderabad.",
     keywords: "valance, window valance, decorative window treatments, top window treatments, architectural features, window decor, Hyderabad valance",
-    image: "/Valance.jpg",
+    image: "/Images/Other-Solutions/Valance.jpg",
     url: "https://www.noorfurnishings.com/subcategories/othersolutions/valance",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/othersolutions/valance"
@@ -42,7 +42,7 @@ const Valance = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Valance.jpg"
+            src="/Images/Other-Solutions/Valance.jpg"
             alt="Premium Valance - Decorative Top Treatments for Windows"
             className="w-full h-full object-cover"
             loading="eager"

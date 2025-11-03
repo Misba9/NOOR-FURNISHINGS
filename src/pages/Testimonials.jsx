@@ -9,7 +9,7 @@ const Testimonials = () => {
       name: 'Priya Sharma',
       location: 'Jubilee Hills, Hyderabad',
       rating: 5,
-      image: '/Jacguard-Curtain.jpg',
+      image: '/Images/Curtains/Jacguard-Curtain.jpg',
       text: 'Absolutely stunning curtains! The quality is exceptional and the installation was seamless. The team was professional, courteous, and completed everything on time. I highly recommend Royal Elegance for anyone looking for premium interior solutions.',
       product: 'Jacquard Curtains',
     },
@@ -17,7 +17,7 @@ const Testimonials = () => {
       name: 'Rajesh Kumar',
       location: 'Banjara Hills, Hyderabad',
       rating: 5,
-      image: '/Shaggy-Carpet.jpg',
+      image: '/Images/Carpets/Shaggy-Carpet.jpg',
       text: 'The team helped us choose the perfect carpet for our living room. Their expertise and attention to detail is unmatched. The carpet quality is superb and has transformed our entire space. Professional service from start to finish!',
       product: 'Shaggy Carpet',
     },
@@ -25,7 +25,7 @@ const Testimonials = () => {
       name: 'Anita Reddy',
       location: 'Gachibowli, Hyderabad',
       rating: 5,
-      image: '/Linen-Curtain.jpg',
+      image: '/Images/Curtains/Linen-Curtain.jpg',
       text: 'Beautiful bedcovers that transformed our bedroom. The luxury fabric feels amazing and the craftsmanship is top-notch. Worth every penny! The entire experience was smooth and the team was very accommodating to our needs.',
       product: 'Luxury Bed Sets',
     },
@@ -41,7 +41,7 @@ const Testimonials = () => {
       name: 'Sneha Iyer',
       location: 'Kondapur, Hyderabad',
       rating: 5,
-      image: '/Blackout-Curtain.jpg',
+      image: '/Images/Curtains/Blackout-Curtain.jpg',
       text: 'Outstanding service and premium quality products! I ordered custom blackout curtains and the entire process was hassle-free. The curtains block light perfectly and look absolutely elegant. Highly satisfied with my purchase!',
       product: 'Blackout Curtains',
     },
@@ -57,7 +57,7 @@ const Testimonials = () => {
       name: 'Lakshmi Naidu',
       location: 'Kukatpally, Hyderabad',
       rating: 5,
-      image: '/Linen-Curtain.jpg',
+      image: '/Images/Curtains/Linen-Curtain.jpg',
       text: 'I am extremely happy with the linen curtains I purchased. The quality is superb and they add such elegance to my home. The customer service was excellent - they helped me choose the right style and color. Definitely recommend!',
       product: 'Linen Curtains',
     },
@@ -65,7 +65,7 @@ const Testimonials = () => {
       name: 'Karthik Rao',
       location: 'Begumpet, Hyderabad',
       rating: 5,
-      image: '/Jacguard-Curtain.jpg',
+      image: '/Images/Curtains/Jacguard-Curtain.jpg',
       text: 'Best decision we made for our new home! Got curtains, carpets, and bedcovers - everything is of premium quality. The team is very professional and the after-sales service is commendable. Worth the investment!',
       product: 'Complete Home Makeover',
     },
@@ -73,7 +73,7 @@ const Testimonials = () => {
       name: 'Divya Krishnan',
       location: 'Miyapur, Hyderabad',
       rating: 5,
-      image: '/Sheer-Elegance-Curtain.jpg',
+      image: '/Images/Blinds/Zebra-Blinds.jpg',
       text: 'The zebra blinds in my bedroom are perfect! They provide excellent light control and privacy. The installation was quick and clean. Royal Elegance has earned a loyal customer. Will definitely return for future projects!',
       product: 'Zebra Blinds',
     },
@@ -84,7 +84,7 @@ const Testimonials = () => {
     title: "Client Testimonials - NOOR FURNISHINGS Premium Interior Solutions",
     description: "Read genuine reviews from satisfied customers of NOOR FURNISHINGS in Hyderabad. Discover why hundreds trust us for premium curtains, carpets, blinds, bedcovers, and upholstery.",
     keywords: "testimonials, customer reviews, curtains, carpets, blinds, bedcovers, upholstery, interior design, Hyderabad, customer satisfaction, quality products",
-    image: "/Jacguard-Curtain.jpg",
+    image: "/Images/Curtains/Jacguard-Curtain.jpg",
     url: "https://www.noorfurnishings.com/testimonials",
     type: "article",
     canonical: "https://www.noorfurnishings.com/testimonials"
@@ -97,7 +97,7 @@ const Testimonials = () => {
         <section className="relative h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Jacguard-Curtain.jpg"
+            src="/Images/Curtains/Jacguard-Curtain.jpg"
             alt="Client Testimonials - NOOR FURNISHINGS Premium Interior Solutions"
             className="w-full h-full object-cover"
             loading="eager"
@@ -207,7 +207,7 @@ const Testimonials = () => {
                 viewport={{ once: true }}
                 className="bg-brown-50 rounded-lg overflow-hidden shadow-md"
               >
-                <img src="/Jacguard-Curtain.jpg" alt="Curtains Collection - NOOR FURNISHINGS" className="w-full h-48 object-cover" loading="lazy" />
+                <img src="/Images/Curtains/Jacguard-Curtain.jpg" alt="Curtains Collection - NOOR FURNISHINGS" className="w-full h-48 object-cover" loading="lazy" />
                 <div className="p-4">
                   <h3 className="font-bold text-brown-900">Curtains</h3>
                   <p className="text-sm text-brown-700">Premium fabrics</p>
@@ -221,7 +221,7 @@ const Testimonials = () => {
                 transition={{ delay: 0.1 }}
                 className="bg-brown-50 rounded-lg overflow-hidden shadow-md"
               >
-                <img src="/Shaggy-Carpet.jpg" alt="Carpets Collection - NOOR FURNISHINGS" className="w-full h-48 object-cover" loading="lazy" />
+                <img src="/Images/Carpets/Shaggy-Carpet.jpg" alt="Carpets Collection - NOOR FURNISHINGS" className="w-full h-48 object-cover" loading="lazy" />
                 <div className="p-4">
                   <h3 className="font-bold text-brown-900">Carpets</h3>
                   <p className="text-sm text-brown-700">Luxury comfort</p>
@@ -235,7 +235,7 @@ const Testimonials = () => {
                 transition={{ delay: 0.2 }}
                 className="bg-brown-50 rounded-lg overflow-hidden shadow-md"
               >
-                <img src="/Linen-Curtain.jpg" alt="Bedcovers Collection - NOOR FURNISHINGS" className="w-full h-48 object-cover" loading="lazy" />
+                <img src="/Images/Bedcovers/Linen-Bedcover.jpg" alt="Bedcovers Collection - NOOR FURNISHINGS" className="w-full h-48 object-cover" loading="lazy" />
                 <div className="p-4">
                   <h3 className="font-bold text-brown-900">Bedcovers</h3>
                   <p className="text-sm text-brown-700">Elegant bedding</p>

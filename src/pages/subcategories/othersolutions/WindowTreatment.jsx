@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const WindowTreatment = () => {
-  const productImage = '/Window-Treatment.jpg';
+  const productImage = '/Images/Other-Solutions/Window-Treatment.jpg';
 
   const features = [
     'Complete window solutions for any architectural style',
@@ -18,9 +18,9 @@ const WindowTreatment = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Valance', image: '/Valance.jpg', link: '/subcategories/othersolutions/valance' },
-    { name: 'Fittings', image: '/fittings.jpg', link: '/subcategories/othersolutions/fittings' },
-    { name: 'Curtains', image: '/Jacguard-Curtain.jpg', link: '/curtains' },
+    { name: 'Valance', image: '/Images/Other-Solutions/Valance.jpg', link: '/subcategories/othersolutions/valance' },
+    { name: 'Fittings', image: '/Images/Other-Solutions/fittings.jpg', link: '/subcategories/othersolutions/fittings' },
+    { name: 'Curtains', image: '/Images/Curtains/Jacguard-Curtain.jpg', link: '/curtains' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const WindowTreatment = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Window-Treatment.jpg"
+          src="/Images/Other-Solutions/Window-Treatment.jpg"
           alt="Window Treatment"
           className="w-full h-full object-cover"
         />
@@ -69,11 +69,11 @@ const WindowTreatment = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Window Treatment Solutions</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Elevate your space with our comprehensive window treatment solutions, designed to 
-                  complement any architectural style while providing functionality and aesthetic appeal. 
-                  Our expertly curated collection offers everything you need to create a cohesive and 
+                  Elevate your space with our comprehensive window treatment solutions, designed to
+                  complement any architectural style while providing functionality and aesthetic appeal.
+                  Our expertly curated collection offers everything you need to create a cohesive and
                   sophisticated look for your windows, from classic drapery to modern blinds.
                 </p>
 
@@ -125,8 +125,8 @@ const WindowTreatment = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium quality materials selected for their durability, appearance, and 
-                functionality. These materials are chosen to provide long-lasting performance while 
+                Made from premium quality materials selected for their durability, appearance, and
+                functionality. These materials are chosen to provide long-lasting performance while
                 maintaining their aesthetic appeal and effectiveness.
               </p>
             </div>
@@ -134,8 +134,8 @@ const WindowTreatment = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in various styles, sizes, and designs to perfectly match your window 
-                dimensions and interior design preferences. Our team provides expert guidance for 
+                Available in various styles, sizes, and designs to perfectly match your window
+                dimensions and interior design preferences. Our team provides expert guidance for
                 selecting the perfect window treatment solutions that complement your space.
               </p>
             </div>
@@ -143,8 +143,8 @@ const WindowTreatment = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
-                Professional installation included with precise measurements and expert fitting. 
-                Our experienced team ensures flawless results that showcase the beauty and functionality 
+                Professional installation included with precise measurements and expert fitting.
+                Our experienced team ensures flawless results that showcase the beauty and functionality
                 of our window treatment solutions in your space.
               </p>
             </div>

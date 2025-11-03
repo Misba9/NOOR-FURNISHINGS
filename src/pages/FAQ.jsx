@@ -54,7 +54,7 @@ const FAQ = () => {
     title: "FAQ - Frequently Asked Questions About NOOR FURNISHINGS",
     description: "Find answers to common questions about NOOR FURNISHINGS premium curtains, carpets, blinds, bedcovers, and upholstery in Hyderabad. Learn about custom sizing, installation, warranties, and maintenance.",
     keywords: "FAQ, frequently asked questions, curtains, carpets, blinds, bedcovers, upholstery, installation, warranty, custom sizing, Hyderabad, interior design",
-    image: "/Jacguard-Curtain.jpg",
+    image: "/Images/Curtains/Jacguard-Curtain.jpg",
     url: "https://www.noorfurnishings.com/faq",
     type: "article",
     canonical: "https://www.noorfurnishings.com/faq"
@@ -67,7 +67,7 @@ const FAQ = () => {
         <section className="relative h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Jacguard-Curtain.jpg"
+            src="/Images/Curtains/Jacguard-Curtain.jpg"
             alt="Frequently Asked Questions - NOOR FURNISHINGS Premium Interior Solutions"
             className="w-full h-full object-cover"
             loading="eager"
@@ -181,7 +181,7 @@ const FAQ = () => {
                 className="text-center"
               >
                 <div className="bg-brown-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <img src="/Shaggy-Carpet.jpg" alt="Premium Carpets - NOOR FURNISHINGS" className="w-16 h-16 object-cover rounded-full" loading="lazy" />
+                  <img src="/Images/Carpets/Shaggy-Carpet.jpg" alt="Premium Carpets - NOOR FURNISHINGS" className="w-16 h-16 object-cover rounded-full" loading="lazy" />
                 </div>
                 <h3 className="text-xl font-bold text-brown-900 mb-3">Premium Carpets</h3>
                 <p className="text-brown-700">
@@ -197,7 +197,7 @@ const FAQ = () => {
                 className="text-center"
               >
                 <div className="bg-brown-100 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6">
-                  <img src="/Linen-Curtain.jpg" alt="Elegant Curtains - NOOR FURNISHINGS" className="w-16 h-16 object-cover rounded-full" loading="lazy" />
+                  <img src="/Images/Curtains/Linen-Curtain.jpg" alt="Elegant Curtains - NOOR FURNISHINGS" className="w-16 h-16 object-cover rounded-full" loading="lazy" />
                 </div>
                 <h3 className="text-xl font-bold text-brown-900 mb-3">Elegant Curtains</h3>
                 <p className="text-brown-700">

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const FloorMats = () => {
-  const productImage = '/Shaggy-Carpet.jpg';
+  const productImage = '/Images/Carpets/Floor-mats.jpg';
 
   const features = [
     'Functional and stylish entryway solutions',
@@ -18,9 +18,9 @@ const FloorMats = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Shaggy Carpets', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/shaggy' },
-    { name: 'PP Carpets', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/pp' },
-    { name: 'Runners', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/runners' },
+    { name: 'Shaggy Carpets', image: '/Images/Carpets/Shaggy-Carpet.jpg', link: '/subcategories/carpets/shaggy' },
+    { name: 'PP Carpets', image: '/Images/Carpets/PP-Carpets.jpg', link: '/subcategories/carpets/pp' },
+    { name: 'Runners', image: '/Images/Carpets/Runner-Carpet.jpg', link: '/subcategories/carpets/runners' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const FloorMats = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Shaggy-Carpet.jpg"
+          src="/Images/Carpets/Floor-mats.jpg"
           alt="Floor Mats"
           className="w-full h-full object-cover"
         />
@@ -69,10 +69,10 @@ const FloorMats = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Floor Mats</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Welcome guests and protect your floors with our premium floor mats, combining functionality 
-                  with style. These practical solutions effectively trap dirt and moisture at the entryway 
+                  Welcome guests and protect your floors with our premium floor mats, combining functionality
+                  with style. These practical solutions effectively trap dirt and moisture at the entryway
                   while adding a touch of elegance to your home's entrance.
                 </p>
 
@@ -124,8 +124,8 @@ const FloorMats = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from durable materials specifically designed for high-traffic entryway areas. 
-                These materials effectively trap dirt and moisture while maintaining their appearance 
+                Made from durable materials specifically designed for high-traffic entryway areas.
+                These materials effectively trap dirt and moisture while maintaining their appearance
                 and functionality over time.
               </p>
             </div>
@@ -133,8 +133,8 @@ const FloorMats = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in various sizes, shapes, and designs to perfectly fit your entryway space. 
-                Our team provides expert guidance for selecting the perfect floor mat that combines 
+                Available in various sizes, shapes, and designs to perfectly fit your entryway space.
+                Our team provides expert guidance for selecting the perfect floor mat that combines
                 functionality with aesthetic appeal.
               </p>
             </div>
@@ -142,8 +142,8 @@ const FloorMats = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
-                Professional installation included with precise measurements and expert fitting. 
-                Our experienced team ensures flawless results that maximize the effectiveness 
+                Professional installation included with precise measurements and expert fitting.
+                Our experienced team ensures flawless results that maximize the effectiveness
                 and visual appeal of floor mats in your entryway.
               </p>
             </div>

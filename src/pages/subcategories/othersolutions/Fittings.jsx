@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const Fittings = () => {
-  const productImage = '/fittings.jpg';
+  const productImage = '/Images/Other-Solutions/fittings.jpg';
 
   const features = [
     'Hardware and accessories for window treatments',
@@ -19,9 +19,9 @@ const Fittings = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Window Treatment', image: '/Window-Treatment.jpg', link: '/subcategories/othersolutions/window-treatment' },
-    { name: 'Valance', image: '/Valance.jpg', link: '/subcategories/othersolutions/valance' },
-    { name: 'Curtains', image: '/Jacguard-Curtain.jpg', link: '/curtains' },
+    { name: 'Window Treatment', image: '/Images/Other-Solutions/Window-Treatment.jpg', link: '/subcategories/othersolutions/window-treatment' },
+    { name: 'Valance', image: '/Images/Other-Solutions/Valance.jpg', link: '/subcategories/othersolutions/valance' },
+    { name: 'Curtains', image: '/Images/Curtains/Jacguard-Curtain.jpg', link: '/subcategories/curtains' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const Fittings = () => {
     title: "Fittings - Hardware and Accessories for Window Treatments",
     description: "Premium fittings with hardware and accessories for window treatments. Durable materials with professional installation and 2-year warranty in Hyderabad.",
     keywords: "fittings, window treatment hardware, window accessories, curtain rods, brackets, window treatment accessories, Hyderabad fittings",
-    image: "/fittings.jpg",
+    image: "/Images/Other-Solutions/fittings.jpg",
     url: "https://www.noorfurnishings.com/subcategories/othersolutions/fittings",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/othersolutions/fittings"
@@ -42,7 +42,7 @@ const Fittings = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/fittings.jpg"
+            src="/Images/Other-Solutions/fittings.jpg"
             alt="Premium Fittings - Hardware and Accessories for Window Treatments"
             className="w-full h-full object-cover"
             loading="eager"

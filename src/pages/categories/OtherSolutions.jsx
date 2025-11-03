@@ -8,19 +8,19 @@ const OtherSolutions = () => {
   const otherSolutions = [
     {
       name: 'Window Treatment',
-      image: '/Window-Treatment.jpg',
+      image: '/Images/Other-Solutions/Window-Treatment.jpg',
       description: 'Complete window solutions for any architectural style',
       link: '/subcategories/othersolutions/window-treatment'
     },
     {
       name: 'Valance',
-      image: '/Valance.jpg',
+      image: '/Images/Other-Solutions/Valance.jpg',
       description: 'Decorative top treatments for windows',
       link: '/subcategories/othersolutions/valance'
     },
     {
       name: 'Fittings',
-      image: '/fittings.jpg',
+      image: '/Images/Other-Solutions/fittings.jpg',
       description: 'Hardware and accessories for window treatments',
       link: '/subcategories/othersolutions/fittings'
     }
@@ -31,7 +31,7 @@ const OtherSolutions = () => {
     title: "Other Solutions - NOOR FURNISHINGS Complete Interior Design",
     description: "Explore our complete interior design solutions including Window Treatment, Valance, and Fittings. Complementary solutions for a cohesive look in Hyderabad.",
     keywords: "window treatment, valance, fittings, interior design, window accessories, Hyderabad, complete solutions",
-    image: "/Window-Treatment.jpg",
+    image: "/Images/Other-Solutions/Window-Treatment.jpg",
     url: "https://www.noorfurnishings.com/other-solutions",
     type: "article",
     canonical: "https://www.noorfurnishings.com/other-solutions"
@@ -44,7 +44,7 @@ const OtherSolutions = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Window-Treatment.jpg"
+            src="/Images/Other-Solutions/Window-Treatment.jpg"
             alt="Complete Interior Design Solutions - NOOR FURNISHINGS"
             className="w-full h-full object-cover"
             loading="eager"

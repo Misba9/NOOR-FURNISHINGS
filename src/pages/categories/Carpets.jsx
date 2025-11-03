@@ -8,31 +8,31 @@ const Carpets = () => {
   const carpetTypes = [
     {
       name: 'Shaggy Carpets',
-      image: '/Shaggy-Carpet.jpg',
+      image: '/Images/Carpets/Shaggy-Carpet.jpg',
       description: 'Ultra-soft texture with luxurious deep pile',
       link: '/subcategories/carpets/shaggy'
     },
     {
       name: 'PP Carpets',
-      image: '/PP-carpet.jpg',
+      image: '/Images/Carpets/PP-Carpets.jpg',
       description: 'Durable polypropylene fibers for high-traffic areas',
       link: '/subcategories/carpets/pp'
     },
     {
       name: 'Turkish Carpets',
-      image: '/Turkish-Carpet.jpg',
+      image: '/Images/Carpets/Turkish-Carpet.jpg',
       description: 'Traditional craftsmanship with intricate patterns',
       link: '/subcategories/carpets/turkish'
     },
     {
       name: 'Floor Mats',
-      image: '/Floor-mats.jpg',
+      image: '/Images/Carpets/Floor-mats.jpg',
       description: 'Functional and stylish entryway solutions',
       link: '/subcategories/carpets/floor-mats'
     },
     {
       name: 'Runners',
-      image: '/Runner-Rug-carpet.jpg',
+      image: '/Images/Carpets/Runner-Carpet.jpg',
       description: 'Long and narrow carpets for hallways and corridors',
       link: '/subcategories/carpets/runners'
     }
@@ -43,7 +43,7 @@ const Carpets = () => {
     title: "Carpet Collection - NOOR FURNISHINGS Premium Floor Coverings",
     description: "Discover our premium carpet collection including Shaggy, PP, Turkish, and Runner carpets. Luxurious floor coverings for comfort and style in Hyderabad.",
     keywords: "carpets, floor coverings, Shaggy carpets, PP carpets, Turkish carpets, Runners, Floor mats, Hyderabad, premium carpets",
-    image: "/Shaggy-Carpet.jpg",
+    image: "/Images/Carpets/Shaggy-Carpet.jpg",
     url: "https://www.noorfurnishings.com/carpets",
     type: "article",
     canonical: "https://www.noorfurnishings.com/carpets"
@@ -56,7 +56,7 @@ const Carpets = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Shaggy-Carpet.jpg"
+            src="/Images/Carpets/Shaggy-Carpet.jpg"
             alt="Premium Carpet Collection - NOOR FURNISHINGS Floor Coverings"
             className="w-full h-full object-cover"
             loading="eager"

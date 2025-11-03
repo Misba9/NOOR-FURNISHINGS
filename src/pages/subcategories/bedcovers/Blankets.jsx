@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const Blankets = () => {
-  const productImage = '/Linen-Curtain.jpg';
+  const productImage = '/Images/Bedcovers/Blanket.jpg';
 
   const features = [
     'Warm and cozy options for all seasons',
@@ -18,9 +18,9 @@ const Blankets = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Double Bed Bedcovers', image: '/Linen-Curtain.jpg', link: '/subcategories/bedcovers/double-bed' },
-    { name: 'Fitted Bedcovers', image: '/Linen-Curtain.jpg', link: '/subcategories/bedcovers/fitted-bedcovers' },
-    { name: 'Luxury Bed Sets', image: '/Velvet-Curtain.jpg', link: '/subcategories/bedcovers/luxury-bed-sets' },
+    { name: 'Double Bed Bedcovers', image: '/Images/Bedcovers/Double-Bed-Bedcover.jpg', link: '/subcategories/bedcovers/double-bed' },
+    { name: 'Fitted Bedcovers', image: '/Images/Bedcovers/Fitted-Bedcover.jpg', link: '/subcategories/bedcovers/fitted-bedcovers' },
+    { name: 'Luxury Bed Sets', image: '/Images/Bedcovers/Luxury-Bed-Set.jpg', link: '/subcategories/bedcovers/luxury-bed-sets' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Blankets = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Linen-Curtain.jpg"
+          src="/Images/Bedcovers/Blanket.jpg"
           alt="Blankets"
           className="w-full h-full object-cover"
         />
@@ -69,11 +69,11 @@ const Blankets = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Blankets</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Stay cozy and comfortable with our premium blankets, designed to provide the perfect 
-                  amount of warmth for a restful night's sleep. These versatile coverings offer the ideal 
-                  balance of comfort and breathability, making them suitable for year-round use and 
+                  Stay cozy and comfortable with our premium blankets, designed to provide the perfect
+                  amount of warmth for a restful night's sleep. These versatile coverings offer the ideal
+                  balance of comfort and breathability, making them suitable for year-round use and
                   ensuring you stay comfortable in any season.
                 </p>
 
@@ -125,8 +125,8 @@ const Blankets = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium quality fabrics selected for their warmth, comfort, and breathability. 
-                These materials are chosen to create a cozy covering solution that provides the perfect 
+                Made from premium quality fabrics selected for their warmth, comfort, and breathability.
+                These materials are chosen to create a cozy covering solution that provides the perfect
                 amount of warmth without overheating, ensuring a comfortable sleep experience.
               </p>
             </div>
@@ -134,8 +134,8 @@ const Blankets = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in standard sizes with custom options for unique dimensions. 
-                Our team provides expert guidance for selecting the perfect blanket that 
+                Available in standard sizes with custom options for unique dimensions.
+                Our team provides expert guidance for selecting the perfect blanket that
                 complements your bedroom decor and meets your comfort preferences.
               </p>
             </div>
@@ -143,8 +143,8 @@ const Blankets = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Care Instructions</h3>
               <p className="text-brown-700">
-                Easy to maintain with machine washable options. Our blankets are designed for 
-                convenient care while maintaining their quality and appearance. Specific care instructions 
+                Easy to maintain with machine washable options. Our blankets are designed for
+                convenient care while maintaining their quality and appearance. Specific care instructions
                 are provided with each product to ensure longevity and preserve the fabric's softness.
               </p>
             </div>

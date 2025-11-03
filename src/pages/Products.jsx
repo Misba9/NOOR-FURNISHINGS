@@ -8,42 +8,42 @@ const Products = () => {
   const productCategories = [
     {
       name: 'Curtains',
-      image: '/Jacguard-Curtain.jpg',
+      image: '/Images/Curtains/Jacguard-Curtain.jpg',
       description: 'Elegant window treatments in various styles and fabrics',
       link: '/curtains',
       itemCount: 7
     },
     {
       name: 'Carpets',
-      image: '/Shaggy-Carpet.jpg',
+      image: '/Images/Carpets/Shaggy-Carpet.jpg',
       description: 'Luxurious floor coverings for comfort and style',
       link: '/carpets',
       itemCount: 5
     },
     {
       name: 'Bedcovers',
-      image: '/Linen-Bedcover.jpg',
+      image: '/Images/Bedcovers/Linen-Bedcover.jpg',
       description: 'Premium bedding collections for ultimate comfort',
       link: '/bedcovers',
       itemCount: 7
     },
     {
       name: 'Blinds',
-      image: '/Venetian-Blind.jpg',
+      image: '/Images/Blinds/Venetian-Blind.jpg',
       description: 'Functional window coverings with modern designs',
       link: '/blinds',
       itemCount: 6
     },
     {
       name: 'Upholstery',
-      image: '/Upholstery-Sofa-Fabrics.jpg',
+      image: '/Images/Upholstery/Sofa-Fabrics-Upholstery.jpg',
       description: 'Premium fabrics for furniture transformation',
       link: '/upholstery',
       itemCount: 2
     },
     {
       name: 'Other Solutions',
-      image: '/Window-Treatment.jpg',
+      image: '/Images/Other-Solutions/Window-Treatment.jpg',
       description: 'Complete interior design solutions',
       link: '/other-solutions',
       itemCount: 3
@@ -55,7 +55,7 @@ const Products = () => {
     title: "Our Products - NOOR FURNISHINGS Premium Interior Solutions",
     description: "Explore our comprehensive range of premium curtains, carpets, bedcovers, blinds, upholstery, and interior solutions in Hyderabad. Luxury products for every space.",
     keywords: "products, curtains, carpets, bedcovers, blinds, upholstery, interior design, Hyderabad, luxury products, premium solutions",
-    image: "/Jacguard-Curtain.jpg",
+    image: "/Images/Curtains/Jacguard-Curtain.jpg",
     url: "https://www.noorfurnishings.com/products",
     type: "article",
     canonical: "https://www.noorfurnishings.com/products"
@@ -68,7 +68,7 @@ const Products = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Jacguard-Curtain.jpg"
+            src="/Images/Curtains/Jacguard-Curtain.jpg"
             alt="Our Premium Products - NOOR FURNISHINGS Interior Solutions"
             className="w-full h-full object-cover"
             loading="eager"

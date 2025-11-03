@@ -50,7 +50,7 @@ const Enquiry = () => {
     title: "Get a Free Enquiry - NOOR FURNISHINGS Premium Interior Solutions",
     description: "Request a free consultation and personalized quote for premium curtains, carpets, blinds, bedcovers, and upholstery in Hyderabad. Our experts will contact you within 24 hours.",
     keywords: "enquiry, free consultation, curtains, carpets, blinds, bedcovers, upholstery, interior design, Hyderabad, quote, personalized solutions",
-    image: "/Jacguard-Curtain.jpg",
+    image: "/Images/Curtains/Jacguard-Curtain.jpg",
     url: "https://www.noorfurnishings.com/enquiry",
     type: "article",
     canonical: "https://www.noorfurnishings.com/enquiry"
@@ -63,7 +63,7 @@ const Enquiry = () => {
         <section className="relative h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Jacguard-Curtain.jpg"
+            src="/Images/Curtains/Jacguard-Curtain.jpg"
             alt="Get a Free Enquiry - NOOR FURNISHINGS Premium Interior Solutions"
             className="w-full h-full object-cover"
             loading="eager"
@@ -238,7 +238,7 @@ const Enquiry = () => {
                 viewport={{ once: true }}
                 className="bg-brown-50 rounded-lg overflow-hidden shadow-lg"
               >
-                <img src="/Shaggy-Carpet.jpg" alt="Premium Carpets - NOOR FURNISHINGS" className="w-full h-48 object-cover" loading="lazy" />
+                <img src="/Images/Carpets/Shaggy-Carpet.jpg" alt="Premium Carpets - NOOR FURNISHINGS" className="w-full h-48 object-cover" loading="lazy" />
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-brown-900 mb-2">Premium Carpets</h3>
                   <p className="text-brown-700">
@@ -254,7 +254,7 @@ const Enquiry = () => {
                 transition={{ delay: 0.1 }}
                 className="bg-brown-50 rounded-lg overflow-hidden shadow-lg"
               >
-                <img src="/Linen-Curtain.jpg" alt="Elegant Curtains - NOOR FURNISHINGS" className="w-full h-48 object-cover" loading="lazy" />
+                <img src="/Images/Curtains/Linen-Curtain.jpg" alt="Elegant Curtains - NOOR FURNISHINGS" className="w-full h-48 object-cover" loading="lazy" />
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-brown-900 mb-2">Elegant Curtains</h3>
                   <p className="text-brown-700">

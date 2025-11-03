@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const Runners = () => {
-  const productImage = '/runners-carpets.jpg';
+  const productImage = '/Images/Carpets/Runner-Carpet.jpg';
 
   const features = [
     'Long and narrow carpets for hallways and corridors',
@@ -19,9 +19,9 @@ const Runners = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Shaggy Carpets', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/shaggy' },
-    { name: 'PP Carpets', image: '/pp-carpets.jpg', link: '/subcategories/carpets/pp' },
-    { name: 'Turkish Carpets', image: '/Turkish-Carpet.jpg', link: '/subcategories/carpets/turkish' },
+    { name: 'Shaggy Carpets', image: '/Images/Carpets/Shaggy-Carpet.jpg', link: '/subcategories/carpets/shaggy' },
+    { name: 'PP Carpets', image: '/Images/Carpets/PP-Carpets.jpg', link: '/subcategories/carpets/pp' },
+    { name: 'Turkish Carpets', image: '/Images/Carpets/Turkish-Carpet.jpg', link: '/subcategories/carpets/turkish' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const Runners = () => {
     title: "Runner Carpets - Long and Narrow Hallway Carpets",
     description: "Premium runner carpets designed for hallways and corridors. Long and narrow carpets with durable materials for high-traffic areas in Hyderabad.",
     keywords: "runner carpets, hallway carpets, corridor carpets, long carpets, narrow carpets, high traffic carpets, Hyderabad carpets",
-    image: "/runners-carpets.jpg",
+    image: "/Images/Carpets/Runner-Carpet.jpg",
     url: "https://www.noorfurnishings.com/subcategories/carpets/runners",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/carpets/runners"
@@ -42,7 +42,7 @@ const Runners = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/runners-carpets.jpg"
+            src="/Images/Carpets/Runner-Carpet.jpg"
             alt="Premium Runner Carpets for Hallways and Corridors - Long and Narrow Design"
             className="w-full h-full object-cover"
             loading="eager"

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const Linen = () => {
-  const productImage = '/Linen-Curtain.jpg';
+  const productImage = '/Images/Curtains/Linen-Curtain.jpg';
 
   const features = [
     'Natural linen fabric with relaxed elegance',
@@ -18,9 +18,9 @@ const Linen = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Jacquard Curtains', image: '/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
-    { name: 'Blackout Curtains', image: '/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
-    { name: 'Sheer Curtains', image: '/Sheer-Elegance-Curtain.jpg', link: '/subcategories/curtains/sheer' },
+    { name: 'Jacquard Curtains', image: '/Images/Curtains/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
+    { name: 'Blackout Curtains', image: '/Images/Curtains/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
+    { name: 'Sheer Curtains', image: '/Images/Curtains/Sheer-Curtain.jpg', link: '/subcategories/curtains/sheer' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Linen = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Linen-Curtain.jpg"
+          src="/Images/Curtains/Linen-Curtain.jpg"
           alt="Linen Curtains"
           className="w-full h-full object-cover"
         />
@@ -69,10 +69,10 @@ const Linen = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Linen Curtains</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Enhance your space with our premium linen curtains, featuring the natural texture and relaxed 
-                  elegance of high-quality linen fabric. These curtains bring a sense of organic sophistication 
+                  Enhance your space with our premium linen curtains, featuring the natural texture and relaxed
+                  elegance of high-quality linen fabric. These curtains bring a sense of organic sophistication
                   to any room while offering excellent light filtering properties.
                 </p>
 
@@ -124,7 +124,7 @@ const Linen = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium quality linen fabric that is naturally breathable and moisture-wicking. 
+                Made from premium quality linen fabric that is naturally breathable and moisture-wicking.
                 The fabric has a beautiful natural texture that becomes more appealing with age.
               </p>
             </div>
@@ -132,7 +132,7 @@ const Linen = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in custom sizes and a range of natural colors to complement your decor. 
+                Available in custom sizes and a range of natural colors to complement your decor.
                 Our team provides expert guidance for perfect selections.
               </p>
             </div>
@@ -140,7 +140,7 @@ const Linen = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
-                Professional installation included with precise measurements and expert fitting. 
+                Professional installation included with precise measurements and expert fitting.
                 Our experienced team ensures flawless results that showcase the natural beauty of linen.
               </p>
             </div>

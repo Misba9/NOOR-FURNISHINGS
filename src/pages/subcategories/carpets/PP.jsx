@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const PP = () => {
-  const productImage = '/pp-carpets.jpg';
+  const productImage = '/Images/Carpets/PP-Carpets.jpg';
 
   const features = [
     'Durable polypropylene fibers for high-traffic areas',
@@ -19,9 +19,9 @@ const PP = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Shaggy Carpets', image: '/Shaggy-Carpet.jpg', link: '/subcategories/carpets/shaggy' },
-    { name: 'Turkish Carpets', image: '/Turkish-Carpet.jpg', link: '/subcategories/carpets/turkish' },
-    { name: 'Runners', image: '/Runner-Rug-carpet.jpg', link: '/subcategories/carpets/runners' },
+    { name: 'Shaggy Carpets', image: '/Images/Carpets/Shaggy-Carpet.jpg', link: '/subcategories/carpets/shaggy' },
+    { name: 'Turkish Carpets', image: '/Images/Carpets/Turkish-Carpet.jpg', link: '/subcategories/carpets/turkish' },
+    { name: 'Runners', image: '/Images/Carpets/Runner-Carpet.jpg', link: '/subcategories/carpets/runners' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const PP = () => {
     title: "PP Carpets - Durable Polypropylene Fiber Carpets",
     description: "Premium PP (polypropylene) carpets with durable fibers for high-traffic areas. Stain-resistant and easy to clean carpets with professional installation in Hyderabad.",
     keywords: "PP carpets, polypropylene carpets, durable carpets, stain resistant carpets, easy clean carpets, high traffic carpets, Hyderabad carpets",
-    image: "/pp-carpets.jpg",
+    image: "/Images/Carpets/PP-Carpets.jpg",
     url: "https://www.noorfurnishings.com/subcategories/carpets/pp",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/carpets/pp"
@@ -42,7 +42,7 @@ const PP = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/pp-carpets.jpg"
+            src="/Images/Carpets/PP-Carpets.jpg"
             alt="Premium PP Carpets with Durable Polypropylene Fibers for High-Traffic Areas"
             className="w-full h-full object-cover"
             loading="eager"

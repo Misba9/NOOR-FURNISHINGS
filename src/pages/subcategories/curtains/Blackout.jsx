@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const Blackout = () => {
-  const productImage = '/Blackout-Curtain.jpg';
+  const productImage = '/Images/Curtains/Blackout-Curtain.jpg';
 
   const features = [
     'Complete light blocking for better sleep',
@@ -18,9 +18,9 @@ const Blackout = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Jacquard Curtains', image: '/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
-    { name: 'Linen Curtains', image: '/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
-    { name: 'Sheer Curtains', image: '/Sheer-Elegance-Curtain.jpg', link: '/subcategories/curtains/sheer' },
+    { name: 'Jacquard Curtains', image: '/Images/Curtains/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
+    { name: 'Linen Curtains', image: '/Images/Curtains/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
+    { name: 'Sheer Curtains', image: '/Images/Curtains/Sheer-Curtain.jpg', link: '/subcategories/curtains/sheer' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const Blackout = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Blackout-Curtain.jpg"
+          src="/Images/Curtains/Blackout-Curtain.jpg"
           alt="Blackout Curtains"
           className="w-full h-full object-cover"
         />
@@ -69,10 +69,10 @@ const Blackout = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Blackout Curtains</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Transform your bedroom into a peaceful sanctuary with our premium blackout curtains. Designed to 
-                  completely block out light, these curtains ensure a restful sleep environment while adding elegance 
+                  Transform your bedroom into a peaceful sanctuary with our premium blackout curtains. Designed to
+                  completely block out light, these curtains ensure a restful sleep environment while adding elegance
                   to your space.
                 </p>
 
@@ -124,7 +124,7 @@ const Blackout = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium blackout fabric with specialized lining that completely blocks light penetration. 
+                Made from premium blackout fabric with specialized lining that completely blocks light penetration.
                 Durable, fade-resistant, and easy to maintain for long-lasting performance.
               </p>
             </div>
@@ -132,7 +132,7 @@ const Blackout = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in custom sizes, colors, and patterns to perfectly match your bedroom decor. 
+                Available in custom sizes, colors, and patterns to perfectly match your bedroom decor.
                 Our team provides expert guidance for optimal light blocking performance.
               </p>
             </div>
@@ -140,7 +140,7 @@ const Blackout = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Installation</h3>
               <p className="text-brown-700">
-                Professional installation included with precise measurements and expert fitting. 
+                Professional installation included with precise measurements and expert fitting.
                 Proper installation ensures maximum light blocking effectiveness.
               </p>
             </div>

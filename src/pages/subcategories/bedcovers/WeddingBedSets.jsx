@@ -5,11 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const WeddingBedSets = () => {
-  const productImages = [
-    '/wedding-bed-set-1.jpg',
-    '/wedding-bed-set-2.jpg',
-    '/wedding-bed-set-3.jpg',
-  ];
+  const productImage = '/Images/Bedcovers/Wedding-Bed-Set.jpg';
 
   const features = [
     'Special collections for newlyweds and celebrations',
@@ -23,9 +19,9 @@ const WeddingBedSets = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Double Bed Bedcovers', image: '/double-bed-bedcover.jpg', link: '/subcategories/bedcovers/double-bed' },
-    { name: 'Fitted Bedcovers', image: '/fitted-bedcover.jpg', link: '/subcategories/bedcovers/fitted-bedcovers' },
-    { name: 'Luxury Bed Sets', image: '/luxury-bed-set.jpg', link: '/subcategories/bedcovers/luxury-bed-sets' },
+    { name: 'Double Bed Bedcovers', image: '/Images/Bedcovers/Double-Bed-Bedcover.jpg', link: '/subcategories/bedcovers/double-bed' },
+    { name: 'Fitted Bedcovers', image: '/Images/Bedcovers/Fitted-Bedcover.jpg', link: '/subcategories/bedcovers/fitted-bedcovers' },
+    { name: 'Luxury Bed Sets', image: '/Images/Bedcovers/Luxury-Bed-Set.jpg', link: '/subcategories/bedcovers/luxury-bed-sets' },
   ];
 
   // SEO data for this page
@@ -33,7 +29,7 @@ const WeddingBedSets = () => {
     title: "Wedding Bed Sets - Special Collections for Newlyweds",
     description: "Premium wedding bed sets with elegant designs and luxurious fabrics for your special day. Special collections for newlyweds and celebrations in Hyderabad.",
     keywords: "wedding bed sets, newlywed bedding, luxury bed sets, celebration bedding, premium bedcovers, Hyderabad bed sets",
-    image: "/wedding-bed-set-1.jpg",
+    image: "/Images/Bedcovers/Wedding-Bed-Set.jpg",
     url: "https://www.noorfurnishings.com/subcategories/bedcovers/wedding-bed-sets",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/bedcovers/wedding-bed-sets"
@@ -46,7 +42,7 @@ const WeddingBedSets = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/wedding-bed-set-1.jpg"
+            src="/Images/Bedcovers/Wedding-Bed-Set.jpg"
             alt="Premium Wedding Bed Sets for Newlyweds and Celebrations"
             className="w-full h-full object-cover"
             loading="eager"
@@ -67,25 +63,19 @@ const WeddingBedSets = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <div className="grid grid-cols-2 gap-4">
-                  {productImages.map((image, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      className="rounded-lg overflow-hidden shadow-lg"
-                    >
-                      <img
-                        src={image}
-                        alt={`Premium Wedding Bed Sets ${index + 1} - NOOR FURNISHINGS`}
-                        className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
-                        loading="lazy"
-                      />
-                    </motion.div>
-                  ))}
-                </div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="rounded-lg overflow-hidden shadow-lg h-full"
+                >
+                  <img
+                    src={productImage}
+                    alt="Premium Wedding Bed Sets - NOOR FURNISHINGS"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </motion.div>
               </div>
 
               <div>

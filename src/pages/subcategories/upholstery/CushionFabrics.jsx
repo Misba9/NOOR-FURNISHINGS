@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const CushionFabrics = () => {
-  const productImage = '/Upholstery-Cushion-Fabric.jpg';
+  const productImage = '/Images/Upholstery/Cushion-Fabric-Upholstery.jpg';
 
   const features = [
     'Soft and durable materials for decorative cushions',
@@ -18,9 +18,9 @@ const CushionFabrics = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Sofa Fabrics', image: '/Upholstery-Sofa-Fabrics.jpg', link: '/subcategories/upholstery/sofa-fabrics' },
-    { name: 'Jacquard Curtains', image: '/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
-    { name: 'Sheer Curtains', image: '/Sheer-Elegance-Curtain.jpg', link: '/subcategories/curtains/sheer' },
+    { name: 'Sofa Fabrics', image: '/Images/Upholstery/Sofa-Fabrics-Upholstery.jpg', link: '/subcategories/upholstery/sofa-fabrics' },
+    { name: 'Jacquard Curtains', image: '/Images/Curtains/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
+    { name: 'Sheer Curtains', image: '/Images/Curtains/Sheer-Curtain.jpg', link: '/subcategories/curtains/sheer' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const CushionFabrics = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Upholstery-Cushion-Fabric.jpg"
+          src="/Images/Upholstery/Cushion-Fabric-Upholstery.jpg"
           alt="Cushion Fabrics"
           className="w-full h-full object-cover"
         />
@@ -69,11 +69,11 @@ const CushionFabrics = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Cushion Fabrics</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Enhance your living space with our premium cushion fabrics, designed to add comfort, 
-                  style, and visual interest to your furniture. These carefully selected materials offer 
-                  the perfect combination of softness and durability, making them ideal for creating 
+                  Enhance your living space with our premium cushion fabrics, designed to add comfort,
+                  style, and visual interest to your furniture. These carefully selected materials offer
+                  the perfect combination of softness and durability, making them ideal for creating
                   beautiful decorative accents that transform any room.
                 </p>
 
@@ -125,8 +125,8 @@ const CushionFabrics = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium quality fabrics selected for their softness, durability, and aesthetic 
-                appeal. These materials are chosen to provide long-lasting performance while maintaining 
+                Made from premium quality fabrics selected for their softness, durability, and aesthetic
+                appeal. These materials are chosen to provide long-lasting performance while maintaining
                 their appearance and comfort, even with regular use.
               </p>
             </div>
@@ -134,8 +134,8 @@ const CushionFabrics = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in various textures, patterns, and colors to perfectly match your design 
-                preferences and existing decor. Our team provides expert guidance for selecting the 
+                Available in various textures, patterns, and colors to perfectly match your design
+                preferences and existing decor. Our team provides expert guidance for selecting the
                 perfect cushion fabrics that complement your space.
               </p>
             </div>
@@ -143,8 +143,8 @@ const CushionFabrics = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Care Instructions</h3>
               <p className="text-brown-700">
-                Easy to maintain with specific care instructions for each fabric type. Many of our 
-                cushion fabrics are stain-resistant and designed for convenient cleaning while maintaining 
+                Easy to maintain with specific care instructions for each fabric type. Many of our
+                cushion fabrics are stain-resistant and designed for convenient cleaning while maintaining
                 their quality and appearance over time.
               </p>
             </div>

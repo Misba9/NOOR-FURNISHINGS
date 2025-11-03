@@ -8,43 +8,43 @@ const Curtains = () => {
   const curtainTypes = [
     {
       name: 'Jacquard Curtains',
-      image: '/Jacguard-Curtain.jpg',
+      image: '/Images/Curtains/Jacguard-Curtain.jpg',
       description: 'Luxurious woven fabric with intricate patterns',
       link: '/subcategories/curtains/jacquard'
     },
     {
       name: 'Blackout Curtains',
-      image: '/Blackout-Curtain.jpg',
+      image: '/Images/Curtains/Blackout-Curtain.jpg',
       description: 'Complete light blocking for better sleep',
       link: '/subcategories/curtains/blackout'
     },
     {
       name: 'Plain Curtains',
-      image: '/Eyelet-Curtains.jpg',
+      image: '/Images/Curtains/Plain-Curtain.webp',
       description: 'Simple elegance with premium fabric quality',
       link: '/subcategories/curtains/plain'
     },
     {
       name: 'Linen Curtains',
-      image: '/Linen-Curtain.jpg',
+      image: '/Images/Curtains/Linen-Curtain.jpg',
       description: 'Natural texture with a relaxed, elegant look',
       link: '/subcategories/curtains/linen'
     },
     {
       name: 'Sheer Curtains',
-      image: '/Sheer-Elegance-Curtain.jpg',
+      image: '/Images/Curtains/Sheer-Curtain.jpg',
       description: 'Light and airy for a soft, diffused light',
       link: '/subcategories/curtains/sheer'
     },
     {
       name: 'Imported Curtains',
-      image: '/Velvet-Curtain.jpg',
+      image: '/Images/Curtains/imported-curtains.jpg',
       description: 'Premium international designs and fabrics',
       link: '/subcategories/curtains/imported'
     },
     {
       name: 'Textured Curtains',
-      image: '/Pleated-Elegance.jpg',
+      image: '/Images/Curtains/textured-curtains.jpg',
       description: 'Unique surface patterns for visual interest',
       link: '/subcategories/curtains/texture'
     }
@@ -55,7 +55,7 @@ const Curtains = () => {
     title: "Curtains Collection - NOOR FURNISHINGS Premium Window Treatments",
     description: "Explore our premium curtains collection including Jacquard, Blackout, Linen, Sheer, and Imported curtains. Elegant window treatments for every style in Hyderabad.",
     keywords: "curtains, window treatments, Jacquard curtains, Blackout curtains, Linen curtains, Sheer curtains, Imported curtains, Hyderabad, premium curtains",
-    image: "/Jacguard-Curtain.jpg",
+    image: "/Images/Curtains/Jacguard-Curtain.jpg",
     url: "https://www.noorfurnishings.com/curtains",
     type: "article",
     canonical: "https://www.noorfurnishings.com/curtains"
@@ -68,7 +68,7 @@ const Curtains = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Jacguard-Curtain.jpg"
+            src="/Images/Curtains/Jacguard-Curtain.jpg"
             alt="Premium Curtains Collection - NOOR FURNISHINGS Window Treatments"
             className="w-full h-full object-cover"
             loading="eager"

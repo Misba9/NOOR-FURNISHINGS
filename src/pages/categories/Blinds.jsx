@@ -8,37 +8,37 @@ const Blinds = () => {
   const blindTypes = [
     {
       name: 'Venetian Blinds',
-      image: '/Venetian-Blind.jpg',
+      image: '/Images/Blinds/Venetian-Blind.jpg',
       description: 'Classic horizontal slats for light control',
       link: '/subcategories/blinds/venetian'
     },
     {
       name: 'Roman Blinds',
-      image: '/Roman-Blind.jpg',
+      image: '/Images/Blinds/Roman-Blind.jpg',
       description: 'Elegant fabric folds that stack when raised',
       link: '/subcategories/blinds/roman'
     },
     {
       name: 'Wooden Blinds',
-      image: '/Wooden-Blind.jpg',
+      image: '/Images/Blinds/Wooden-Blind.jpg',
       description: 'Natural wood slats for a warm, classic look',
       link: '/subcategories/blinds/wooden'
     },
     {
       name: 'PVC Chick Blinds',
-      image: '/PVC-Chick-Blind.jpg',
+      image: '/Images/Blinds/PVC-Chick-Blind.jpg',
       description: 'Durable and moisture-resistant for kitchens and bathrooms',
       link: '/subcategories/blinds/pvc-chick'
     },
     {
       name: 'Roller Blinds',
-      image: '/Roller-Blinds.jpg',
+      image: '/Images/Blinds/Roller-Blinds.jpg',
       description: 'Simple and sleek with smooth operation',
       link: '/subcategories/blinds/roller'
     },
     {
       name: 'Zebra Blinds',
-      image: '/Zebra-Blinds.jpg',
+      image: '/Images/Blinds/Zebra-Blinds.jpg',
       description: 'Striped fabric for alternating light and privacy',
       link: '/subcategories/blinds/zebra'
     }
@@ -49,7 +49,7 @@ const Blinds = () => {
     title: "Blinds Collection - NOOR FURNISHINGS Premium Window Coverings",
     description: "Discover our premium blinds collection including Venetian, Roman, Wooden, PVC Chick, Roller, and Zebra blinds. Functional window coverings with style in Hyderabad.",
     keywords: "blinds, window coverings, Venetian blinds, Roman blinds, Wooden blinds, PVC Chick blinds, Roller blinds, Zebra blinds, Hyderabad, premium blinds",
-    image: "/Venetian-Blind.jpg",
+    image: "/Images/Blinds/Venetian-Blind.jpg",
     url: "https://www.noorfurnishings.com/blinds",
     type: "article",
     canonical: "https://www.noorfurnishings.com/blinds"
@@ -62,7 +62,7 @@ const Blinds = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Venetian-Blind.jpg"
+            src="/Images/Blinds/Venetian-Blind.jpg"
             alt="Premium Blinds Collection - NOOR FURNISHINGS Window Coverings"
             className="w-full h-full object-cover"
             loading="eager"

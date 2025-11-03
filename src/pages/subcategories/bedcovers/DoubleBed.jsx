@@ -5,11 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const DoubleBed = () => {
-  const productImages = [
-    '/double-bed-bedcover-1.jpg',
-    '/double-bed-bedcover-2.jpg',
-    '/double-bed-bedcover-3.jpg',
-  ];
+  const productImage = '/Images/Bedcovers/Double-Bed-Bedcover.jpg';
 
   const features = [
     'Perfectly sized for double beds with premium comfort',
@@ -23,9 +19,9 @@ const DoubleBed = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Fitted Bedcovers', image: '/fitted-bedcover.jpg', link: '/subcategories/bedcovers/fitted-bedcovers' },
-    { name: 'Linen Bedcovers', image: '/linen-bedcover.jpg', link: '/subcategories/bedcovers/linen' },
-    { name: 'Luxury Bed Sets', image: '/luxury-bed-set.jpg', link: '/subcategories/bedcovers/luxury-bed-sets' },
+    { name: 'Fitted Bedcovers', image: '/Images/Bedcovers/Fitted-Bedcover.jpg', link: '/subcategories/bedcovers/fitted-bedcovers' },
+    { name: 'Linen Bedcovers', image: '/Images/Bedcovers/Linen-Bedcover.jpg', link: '/subcategories/bedcovers/linen' },
+    { name: 'Luxury Bed Sets', image: '/Images/Bedcovers/Luxury-Bed-Set.jpg', link: '/subcategories/bedcovers/luxury-bed-sets' },
   ];
 
   // SEO data for this page
@@ -33,7 +29,7 @@ const DoubleBed = () => {
     title: "Double Bed Bedcovers - Premium Comfort for Double Beds",
     description: "Premium double bed bedcovers perfectly sized for double beds with premium comfort. Hypoallergenic materials and temperature regulating properties in Hyderabad.",
     keywords: "double bed bedcovers, double bed covers, premium bedcovers, comfortable bedcovers, hypoallergenic bedcovers, Hyderabad bedcovers",
-    image: "/double-bed-bedcover-1.jpg",
+    image: "/Images/Bedcovers/Double-Bed-Bedcover.jpg",
     url: "https://www.noorfurnishings.com/subcategories/bedcovers/double-bed",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/bedcovers/double-bed"
@@ -46,7 +42,7 @@ const DoubleBed = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/double-bed-bedcover-1.jpg"
+            src="/Images/Bedcovers/Double-Bed-Bedcover.jpg"
             alt="Premium Double Bed Bedcovers - Perfectly Sized for Double Beds with Premium Comfort"
             className="w-full h-full object-cover"
             loading="eager"
@@ -67,25 +63,19 @@ const DoubleBed = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
-                <div className="grid grid-cols-2 gap-4">
-                  {productImages.map((image, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: index * 0.1 }}
-                      className="rounded-lg overflow-hidden shadow-lg"
-                    >
-                      <img
-                        src={image}
-                        alt={`Premium Double Bed Bedcovers ${index + 1} - NOOR FURNISHINGS`}
-                        className="w-full h-64 object-cover hover:scale-110 transition-transform duration-500"
-                        loading="lazy"
-                      />
-                    </motion.div>
-                  ))}
-                </div>
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  className="rounded-lg overflow-hidden shadow-lg h-full"
+                >
+                  <img
+                    src={productImage}
+                    alt="Premium Double Bed Bedcovers - NOOR FURNISHINGS"
+                    className="w-full h-full object-cover hover:scale-110 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </motion.div>
               </div>
 
               <div>

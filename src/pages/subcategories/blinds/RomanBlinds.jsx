@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const RomanBlinds = () => {
-  const productImage = '/Roman-Blind.jpg';
+  const productImage = '/Images/Blinds/Roman-Blind.jpg';
 
   const features = [
     'Elegant fabric folds that stack when raised',
@@ -19,9 +19,9 @@ const RomanBlinds = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Venetian Blinds', image: '/Venetian-Blind.jpg', link: '/subcategories/blinds/venetian' },
-    { name: 'Wooden Blinds', image: '/Wooden-Blind.jpg', link: '/subcategories/blinds/wooden' },
-    { name: 'Roller Blinds', image: '/Roller-Blinds.jpg', link: '/subcategories/blinds/roller' },
+    { name: 'Venetian Blinds', image: '/Images/Blinds/Venetian-Blind.jpg', link: '/subcategories/blinds/venetian' },
+    { name: 'Wooden Blinds', image: '/Images/Blinds/Wooden-Blind.jpg', link: '/subcategories/blinds/wooden' },
+    { name: 'Roller Blinds', image: '/Images/Blinds/Roller-Blinds.jpg', link: '/subcategories/blinds/roller' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const RomanBlinds = () => {
     title: "Roman Blinds - Elegant Fabric Folds Window Coverings",
     description: "Premium roman blinds with elegant fabric folds that stack when raised. Sophisticated window coverings with privacy and light filtering options in Hyderabad.",
     keywords: "roman blinds, fabric blinds, elegant blinds, window coverings, privacy blinds, light filtering blinds, Hyderabad blinds",
-    image: "/Roman-Blind.jpg",
+    image: "/Images/Blinds/Roman-Blind.jpg",
     url: "https://www.noorfurnishings.com/subcategories/blinds/roman",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/blinds/roman"
@@ -42,7 +42,7 @@ const RomanBlinds = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Roman-Blind.jpg"
+            src="/Images/Blinds/Roman-Blind.jpg"
             alt="Premium Roman Blinds - Elegant Fabric Folds that Stack when Raised"
             className="w-full h-full object-cover"
             loading="eager"

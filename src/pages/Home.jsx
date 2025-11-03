@@ -11,17 +11,17 @@ const Home = () => {
     {
       title: 'Transform Your Space with Royal Elegance',
       subtitle: 'Premium Curtains, Carpets & Interiors',
-      image: '/Jacguard-Curtain.jpg',
+      image: '/Images/Curtains/Jacguard-Curtain.jpg',
     },
     {
       title: 'Luxury That Speaks Volumes',
       subtitle: 'Handcrafted Designs for Distinguished Spaces',
-      image: '/Shaggy-Carpet.jpg',
+      image: '/Images/Carpets/Shaggy-Carpet.jpg',
     },
     {
       title: 'Where Comfort Meets Elegance',
       subtitle: 'Bespoke Solutions for Modern Living',
-      image: '/Linen-Curtain.jpg',
+      image: '/Images/Curtains/Linen-Curtain.jpg',
     },
   ];
 
@@ -35,15 +35,15 @@ const Home = () => {
   const featuredProducts = [
     {
       name: 'Jacquard Curtains',
-      image: '/Jacguard-Curtain.jpg',
+      image: '/Images/Curtains/Jacguard-Curtain.jpg',
       category: 'curtains',
       subcategory: 'jacquard'
     },
-    { name: 'Shaggy Carpets', image: '/Shaggy-Carpet.jpg', category: 'carpets', subcategory: 'shaggy' },
-    { name: 'Luxury Bedcovers', image: '/Luxury-Bed-Set.jpg', category: 'bedcovers', subcategory: 'luxury-bed-sets' },
-    { name: 'Roman Blinds', image: '/Roman-Blind.jpg', category: 'blinds', subcategory: 'roman' },
-    { name: 'Sofa Fabrics', image: '/Upholstery-Sofa-Fabrics.jpg', category: 'upholstery', subcategory: 'sofa-fabrics' },
-    { name: 'Window Treatments', image: '/Window-Treatment.jpg', category: 'othersolutions', subcategory: 'window-treatment' },
+    { name: 'Shaggy Carpets', image: 'Images/Carpets/Shaggy-Carpet.jpg', category: 'carpets', subcategory: 'shaggy' },
+    { name: 'Luxury Bedcovers', image: '/Images/Bedcovers/Luxury-Bed-Set.jpg', category: 'bedcovers', subcategory: 'luxury-bed-sets' },
+    { name: 'Roman Blinds', image: 'Images/Blinds/Roman-Blind.jpg', category: 'blinds', subcategory: 'roman' },
+    { name: 'Sofa Fabrics', image: 'Images/Upholstery/Sofa-Fabrics-Upholstery.jpg', category: 'upholstery', subcategory: 'sofa-fabrics' },
+    { name: 'Window Treatments', image: 'Images/Other-Solutions/Window-Treatment.jpg', category: 'othersolutions', subcategory: 'window-treatment' },
   ];
 
   const whyChooseUs = [
@@ -164,9 +164,9 @@ const Home = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { image: '/Jacguard-Curtain.jpg', title: 'Luxury Interiors' },
-                { image: '/Shaggy-Carpet.jpg', title: 'Expert Craftsmanship' },
-                { image: '/fittings.jpg', title: 'Fittings' },
+                { image: 'Velvet-Curtain.jpg', title: 'Luxury Interiors' },
+                { image: 'Printed-Curtain.jpg', title: 'Expert Craftsmanship' },
+                { image: 'Images/Other-Solutions/fittings.jpg', title: 'Fittings' },
               ].map((item, index) => (
                 <motion.div
                   key={index}

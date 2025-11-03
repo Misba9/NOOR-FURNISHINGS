@@ -1,6 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
+import LoadingSpinner from './components/LoadingSpinner';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
@@ -69,10 +70,27 @@ function ScrollToTop() {
   return null;
 }
 
-function App() {
+function AppContent() {
+  const [loading, setLoading] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    // Set loading to true when location changes
+    setLoading(true);
+    
+    // Simulate loading time (you can adjust this as needed)
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 300);
+
+    // Clean up the timer
+    return () => clearTimeout(timer);
+  }, [location.pathname]); // Only trigger when pathname changes
+
   return (
-    <Router>
+    <>
       <ScrollToTop />
+      {loading && <LoadingSpinner />}
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
@@ -136,6 +154,14 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }

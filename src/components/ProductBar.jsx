@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { ChevronDown, Bed, Eye, Square, Palette, RollerCoaster, Layers } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const ProductBar = () => {
   const [activeMenu, setActiveMenu] = useState(null);
+  const location = useLocation();
 
   const products = [
     {
@@ -53,6 +54,24 @@ const ProductBar = () => {
     return `/subcategories/${formattedCategoryName}/${formattedItemName}`;
   };
 
+  // Check if a specific item is active
+  const isActiveItem = (categoryName, itemName) => {
+    const path = generatePath(categoryName, itemName);
+    return location.pathname === path;
+  };
+
+  // Check if a category is active (for highlighting the category in the main menu)
+  const isCategoryActive = (categoryName) => {
+    // Special handling for "Other Solutions" category
+    if (categoryName === 'Other Solutions') {
+      return location.pathname.includes('/subcategories/othersolutions');
+    }
+    
+    // For all other categories
+    const formattedCategoryName = categoryName.toLowerCase().replace(/\s+/g, '-');
+    return location.pathname.includes(`/subcategories/${formattedCategoryName}`);
+  };
+
   return (
     <div className="bg-brown-900 text-white border-b-2 border-gold-600">
       <div className="container mx-auto px-4">
@@ -64,7 +83,13 @@ const ProductBar = () => {
               onMouseEnter={() => setActiveMenu(category.name)}
               onMouseLeave={() => setActiveMenu(null)}
             >
-              <button className="flex items-center gap-2 font-medium hover:text-gold-400 transition-colors group">
+              <button 
+                className={`flex items-center gap-2 font-medium transition-colors group ${
+                  isCategoryActive(category.name) 
+                    ? 'text-gold-400' 
+                    : 'hover:text-gold-400'
+                }`}
+              >
                 {category.icon}
                 <span className="group-hover:scale-105 transition-transform">{category.name}</span>
                 <ChevronDown size={16} className={`transition-transform ${activeMenu === category.name ? 'rotate-180' : ''}`} />
@@ -83,10 +108,22 @@ const ProductBar = () => {
                       <Link
                         key={item}
                         to={generatePath(category.name, item)}
-                        className="block px-6 py-3 hover:bg-gold-50 hover:text-gold-600 transition-colors border-b border-brown-100 last:border-b-0 flex items-center gap-2 group/item"
+                        className={`block px-6 py-3 transition-colors border-b border-brown-100 last:border-b-0 flex items-center gap-2 group/item ${
+                          isActiveItem(category.name, item)
+                            ? 'bg-gold-100 text-gold-700 font-bold'
+                            : 'hover:bg-gold-50 hover:text-gold-600'
+                        }`}
                       >
-                        <span className="w-2 h-2 bg-gold-600 rounded-full group-hover/item:scale-125 transition-transform"></span>
-                        <span className="group-hover/item:translate-x-1 transition-transform">{item}</span>
+                        <span className={`w-2 h-2 rounded-full group-hover/item:scale-125 transition-transform ${
+                          isActiveItem(category.name, item)
+                            ? 'bg-gold-700'
+                            : 'bg-gold-600'
+                        }`}></span>
+                        <span className={`group-hover/item:translate-x-1 transition-transform ${
+                          isActiveItem(category.name, item)
+                            ? 'font-bold'
+                            : ''
+                        }`}>{item}</span>
                       </Link>
                     ))}
                   </motion.div>
@@ -112,6 +149,7 @@ const ProductBar = () => {
                   <option
                     key={item}
                     value={generatePath(category.name, item)}
+                    selected={isActiveItem(category.name, item)}
                   >
                     {item}
                   </option>

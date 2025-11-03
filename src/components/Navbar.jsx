@@ -40,6 +40,9 @@ const Navbar = () => {
     { name: 'Other Solutions', path: '/other-solutions' },
   ];
 
+  // Check if we're on a subcategory page under "Other Solutions"
+  const isOtherSolutionsActive = location.pathname.includes('/subcategories/othersolutions');
+
   return (
     <nav className={`sticky top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-white'
       }`} role="navigation" aria-label="Main navigation">

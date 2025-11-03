@@ -26,7 +26,7 @@ const Contact = () => {
     title: "Contact Us - NOOR FURNISHINGS Premium Interior Solutions",
     description: "Get in touch with NOOR FURNISHINGS in Hyderabad for premium curtains, carpets, blinds, bedcovers, and upholstery. Visit our showroom or contact us for expert consultation.",
     keywords: "contact us, curtains, carpets, blinds, bedcovers, upholstery, interior design, Hyderabad, showroom, consultation, phone, email, WhatsApp",
-    image: "/Jacguard-Curtain.jpg",
+    image: "/Images/Curtains/Jacguard-Curtain.jpg",
     url: "https://www.noorfurnishings.com/contact",
     type: "article",
     canonical: "https://www.noorfurnishings.com/contact"
@@ -39,7 +39,7 @@ const Contact = () => {
         <section className="relative h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/Jacguard-Curtain.jpg"
+            src="/Images/Curtains/Jacguard-Curtain.jpg"
             alt="Contact NOOR FURNISHINGS - Premium Interior Solutions in Hyderabad"
             className="w-full h-full object-cover"
             loading="eager"
@@ -242,7 +242,7 @@ const Contact = () => {
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
                 <img
-                  src="/Shaggy-Carpet.jpg"
+                  src="/Images/Carpets/Shaggy-Carpet.jpg"
                   alt="NOOR FURNISHINGS Showroom - Premium Collections"
                   className="w-full h-64 object-cover"
                   loading="lazy"
@@ -267,7 +267,7 @@ const Contact = () => {
                 className="bg-white rounded-lg shadow-lg overflow-hidden"
               >
                 <img
-                  src="/Linen-Curtain.jpg"
+                  src="/Images/Curtains/Linen-Curtain.jpg"
                   alt="Expert Consultation - NOOR FURNISHINGS"
                   className="w-full h-64 object-cover"
                   loading="lazy"

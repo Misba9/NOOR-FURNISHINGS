@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const Imported = () => {
-  const productImage = '/imported-curtains.jpg';
+  const productImage = '/Images/Curtains/imported-curtains.jpg';
 
   const features = [
     'Premium international designs and fabrics',
@@ -19,9 +19,9 @@ const Imported = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Jacquard Curtains', image: '/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
-    { name: 'Blackout Curtains', image: '/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
-    { name: 'Sheer Curtains', image: '/Sheer-Elegance-Curtain.jpg', link: '/subcategories/curtains/sheer' },
+    { name: 'Jacquard Curtains', image: '/Images/Curtains/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
+    { name: 'Blackout Curtains', image: '/Images/Curtains/Blackout-Curtain.jpg', link: '/subcategories/curtains/blackout' },
+    { name: 'Sheer Curtains', image: '/Images/Curtains/Sheer-Curtain.jpg', link: '/subcategories/curtains/sheer' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const Imported = () => {
     title: "Imported Curtains - Premium International Fabric Designs",
     description: "Discover our exclusive collection of imported curtains featuring premium international designs and fabrics. Luxury window treatments with custom sizing available in Hyderabad.",
     keywords: "imported curtains, international curtain designs, premium curtains, luxury curtains, custom curtains, Hyderabad curtains",
-    image: "/imported-curtains.jpg",
+    image: "/Images/Curtains/imported-curtains.jpg",
     url: "https://www.noorfurnishings.com/subcategories/curtains/imported",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/curtains/imported"
@@ -42,7 +42,7 @@ const Imported = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/imported-curtains.jpg"
+            src="/Images/Curtains/imported-curtains.jpg"
             alt="Premium Imported Curtains with International Designs and Fabrics"
             className="w-full h-full object-cover"
             loading="eager"

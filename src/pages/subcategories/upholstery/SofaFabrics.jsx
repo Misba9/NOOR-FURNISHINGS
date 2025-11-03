@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Check } from 'lucide-react';
 
 const SofaFabrics = () => {
-  const productImage = '/Upholstery-Sofa-Fabrics.jpg';
+  const productImage = '/Images/Upholstery/Sofa-Fabrics-Upholstery.jpg';
 
   const features = [
     'Premium fabrics for sofa upholstery and reupholstery',
@@ -18,9 +18,9 @@ const SofaFabrics = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Cushion Fabrics', image: '/Upholstery-Cushion-Fabric.jpg', link: '/subcategories/upholstery/cushion-fabrics' },
-    { name: 'Jacquard Curtains', image: '/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
-    { name: 'Linen Curtains', image: '/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
+    { name: 'Cushion Fabrics', image: '/Images/Upholstery/Cushion-Fabric-Upholstery.jpg', link: '/subcategories/upholstery/cushion-fabrics' },
+    { name: 'Jacquard Curtains', image: '/Images/Curtains/Jacguard-Curtain.jpg', link: '/subcategories/curtains/jacquard' },
+    { name: 'Linen Curtains', image: '/Images/Curtains/Linen-Curtain.jpg', link: '/subcategories/curtains/linen' },
   ];
 
   return (
@@ -28,7 +28,7 @@ const SofaFabrics = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <div className="absolute inset-0 bg-black/50 z-10" />
         <img
-          src="/Upholstery-Sofa-Fabrics.jpg"
+          src="/Images/Upholstery/Sofa-Fabrics-Upholstery.jpg"
           alt="Sofa Fabrics"
           className="w-full h-full object-cover"
         />
@@ -69,11 +69,11 @@ const SofaFabrics = () => {
                 viewport={{ once: true }}
               >
                 <h2 className="text-3xl font-bold text-brown-900 mb-4">Premium Sofa Fabrics</h2>
-                
+
                 <p className="text-brown-700 mb-6 text-lg leading-relaxed">
-                  Transform your living space with our premium sofa fabrics, carefully selected for their 
-                  durability, comfort, and aesthetic appeal. Whether you're upholstering new furniture or 
-                  reupholstering existing pieces, our extensive collection offers the perfect materials 
+                  Transform your living space with our premium sofa fabrics, carefully selected for their
+                  durability, comfort, and aesthetic appeal. Whether you're upholstering new furniture or
+                  reupholstering existing pieces, our extensive collection offers the perfect materials
                   to create a stunning focal point in your home.
                 </p>
 
@@ -125,8 +125,8 @@ const SofaFabrics = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Materials</h3>
               <p className="text-brown-700">
-                Made from premium quality fabrics selected for their durability, comfort, and aesthetic 
-                appeal. These materials are chosen to provide long-lasting performance while maintaining 
+                Made from premium quality fabrics selected for their durability, comfort, and aesthetic
+                appeal. These materials are chosen to provide long-lasting performance while maintaining
                 their appearance and feel, even with regular use.
               </p>
             </div>
@@ -134,8 +134,8 @@ const SofaFabrics = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Customization</h3>
               <p className="text-brown-700">
-                Available in various textures, patterns, and colors to perfectly match your design 
-                preferences and existing decor. Our team provides expert guidance for selecting the 
+                Available in various textures, patterns, and colors to perfectly match your design
+                preferences and existing decor. Our team provides expert guidance for selecting the
                 perfect sofa fabrics that complement your space.
               </p>
             </div>
@@ -143,8 +143,8 @@ const SofaFabrics = () => {
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-xl font-bold text-brown-900 mb-3">Care Instructions</h3>
               <p className="text-brown-700">
-                Easy to maintain with specific care instructions for each fabric type. Many of our 
-                sofa fabrics are stain-resistant and designed for convenient cleaning while maintaining 
+                Easy to maintain with specific care instructions for each fabric type. Many of our
+                sofa fabrics are stain-resistant and designed for convenient cleaning while maintaining
                 their quality and appearance over time.
               </p>
             </div>

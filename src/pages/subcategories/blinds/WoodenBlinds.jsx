@@ -5,7 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import SEO from '../../../components/SEO';
 
 const WoodenBlinds = () => {
-  const productImage = '/wooden-blinds.jpg';
+  const productImage = '/Images/Blinds/Wooden-Blind.jpg';
 
   const features = [
     'Natural wood slats for a warm, classic look',
@@ -19,9 +19,9 @@ const WoodenBlinds = () => {
   ];
 
   const relatedProducts = [
-    { name: 'Venetian Blinds', image: '/Venetian-Blind.jpg', link: '/subcategories/blinds/venetian' },
-    { name: 'Roman Blinds', image: '/Roman-Blind.jpg', link: '/subcategories/blinds/roman' },
-    { name: 'Roller Blinds', image: '/Roller-Blinds.jpg', link: '/subcategories/blinds/roller' },
+    { name: 'Venetian Blinds', image: '/Images/Blinds/Venetian-Blind.jpg', link: '/subcategories/blinds/venetian' },
+    { name: 'Roman Blinds', image: '/Images/Blinds/Roman-Blind.jpg', link: '/subcategories/blinds/roman' },
+    { name: 'Roller Blinds', image: '/Images/Blinds/Roller-Blinds.jpg', link: '/subcategories/blinds/roller' },
   ];
 
   // SEO data for this page
@@ -29,7 +29,7 @@ const WoodenBlinds = () => {
     title: "Wooden Blinds - Natural Wood Slats Window Coverings",
     description: "Premium wooden blinds with natural wood slats for a warm, classic look. Durable window coverings with privacy and light filtering options in Hyderabad.",
     keywords: "wooden blinds, wood blinds, natural wood window coverings, classic blinds, privacy blinds, Hyderabad blinds",
-    image: "/wooden-blinds.jpg",
+    image: "/Images/Blinds/Wooden-Blind.jpg",
     url: "https://www.noorfurnishings.com/subcategories/blinds/wooden",
     type: "article",
     canonical: "https://www.noorfurnishings.com/subcategories/blinds/wooden"
@@ -42,7 +42,7 @@ const WoodenBlinds = () => {
         <section className="relative h-64 md:h-80 overflow-hidden">
           <div className="absolute inset-0 bg-black/50 z-10" />
           <img
-            src="/wooden-blinds.jpg"
+            src="/Images/Blinds/Wooden-Blind.jpg"
             alt="Premium Wooden Blinds with Natural Wood Slats for Classic Look"
             className="w-full h-full object-cover"
             loading="eager"
