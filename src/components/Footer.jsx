@@ -124,7 +124,7 @@ const Footer = () => {
             </ul>
 
             {/* Enhanced decorative image placeholder */}
-            <div className="mt-6 rounded-lg overflow-hidden border-2 border-gold-600 shadow-lg transform hover:scale-105 transition-transform duration-300">
+            {/* <div className="mt-6 rounded-lg overflow-hidden border-2 border-gold-600 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="bg-gradient-to-r from-gold-500/20 to-gold-700/20 h-32 flex items-center justify-center relative">
                 <div className="absolute inset-0 bg-[url('/Jacguard-Curtain.jpg')] bg-cover bg-center opacity-20"></div>
                 <div className="text-center relative z-10">
@@ -132,7 +132,7 @@ const Footer = () => {
                   <p className="text-gold-300 text-sm font-medium">Premium Quality</p>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

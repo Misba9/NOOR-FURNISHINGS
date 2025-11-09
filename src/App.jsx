@@ -9,6 +9,7 @@ import FAQ from './pages/FAQ';
 import Testimonials from './pages/Testimonials';
 import Enquiry from './pages/Enquiry';
 import Products from './pages/Products';
+import Partnership from './pages/Partnership';
 import NotFound from './pages/NotFound';
 // Import category pages
 import Curtains from './pages/categories/Curtains';
@@ -99,6 +100,7 @@ function AppContent() {
           <Route path="faq" element={<FAQ />} />
           <Route path="testimonials" element={<Testimonials />} />
           <Route path="enquiry" element={<Enquiry />} />
+          <Route path="partnership" element={<Partnership />} />
           {/* Products routes */}
           <Route path="products" element={<Products />} />
           <Route path="curtains" element={<Curtains />} />
