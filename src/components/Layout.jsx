@@ -22,7 +22,7 @@ const Layout = () => {
         href="https://wa.me/919392572455"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110 z-50 lg:bottom-8 lg:right-8"
+        className="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-110 z-50 lg:bottom-8 lg:right-8 animate-bounce"
         aria-label="Chat with us on WhatsApp"
       >
         <MessageCircle size={24} className="lg:w-6 lg:h-6" />

@@ -119,16 +119,12 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-2">
                 <Clock size={16} className="mt-1 flex-shrink-0" />
-                <span>Monday - Saturday: 11:30 AM - 10:00 PM</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <Clock size={16} className="mt-1 flex-shrink-0" />
-                <span>Sunday: 11:30 AM - 08:00 PM</span>
+                <span>Monday - Sunday: 10:00 AM - 10:00 PM</span>
               </li>
             </ul>
 
             {/* Enhanced decorative image placeholder */}
-            {/* <div className="mt-6 rounded-lg overflow-hidden border-2 border-gold-600 shadow-lg transform hover:scale-105 transition-transform duration-300">
+            <div className="mt-6 rounded-lg overflow-hidden border-2 border-gold-600 shadow-lg transform hover:scale-105 transition-transform duration-300">
               <div className="bg-gradient-to-r from-gold-500/20 to-gold-700/20 h-32 flex items-center justify-center relative">
                 <div className="absolute inset-0 bg-[url('/Jacguard-Curtain.jpg')] bg-cover bg-center opacity-20"></div>
                 <div className="text-center relative z-10">
@@ -136,7 +132,7 @@ const Footer = () => {
                   <p className="text-gold-300 text-sm font-medium">Premium Quality</p>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </div>
 
@@ -147,7 +143,7 @@ const Footer = () => {
               href="https://alehsanmt.com/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gold-400 hover:text-black transition-colors font-bold"
+              className="text-gold-900 hover:text-gold-900 transition-colors font-bold"
             >
               Al-Ehsan Media & Tech
             </a>

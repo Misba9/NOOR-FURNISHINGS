@@ -88,7 +88,7 @@ const Navbar = () => {
 
             <Link
               to="/enquiry"
-              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2"
+              className="bg-gradient-to-r from-gold-500 to-gold-600 text-white px-6 py-2.5 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center gap-2 animate-pulse"
             >
               <span>Get an Enquiry</span>
             </Link>
