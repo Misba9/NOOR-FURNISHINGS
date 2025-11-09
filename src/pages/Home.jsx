@@ -9,7 +9,7 @@ const Home = () => {
 
   const heroSlides = [
     {
-      title: 'Transform Your Space with Royal Elegance',
+      title: 'Transform Your Space with Noor Furnishings',
       subtitle: 'Premium Curtains, Carpets & Interiors',
       image: '/Images/Curtains/Jacguard-Curtain.jpg',
     },
@@ -154,7 +154,7 @@ const Home = () => {
               viewport={{ once: true }}
               className="text-center mb-12"
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-brown-900 mb-4">About Royal Elegance</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-brown-900 mb-4">About Noor Furnishings</h2>
               <p className="text-brown-700 max-w-3xl mx-auto">
                 With over two decades of expertise in luxury interiors, we bring your vision to life with premium fabrics,
                 expert craftsmanship, and personalized design solutions. Every piece is crafted to perfection, ensuring your

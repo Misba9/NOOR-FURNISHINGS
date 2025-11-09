@@ -10,7 +10,7 @@ const Testimonials = () => {
       location: 'Jubilee Hills, Hyderabad',
       rating: 5,
       image: '/Images/Curtains/Jacguard-Curtain.jpg',
-      text: 'Absolutely stunning curtains! The quality is exceptional and the installation was seamless. The team was professional, courteous, and completed everything on time. I highly recommend Royal Elegance for anyone looking for premium interior solutions.',
+      text: 'Absolutely stunning curtains! The quality is exceptional and the installation was seamless. The team was professional, courteous, and completed everything on time. I highly recommend Noor Furnishings for anyone looking for premium interior solutions.',
       product: 'Jacquard Curtains',
     },
     {
@@ -34,7 +34,7 @@ const Testimonials = () => {
       location: 'Madhapur, Hyderabad',
       rating: 5,
       image: '/Eyelet-Curtains.jpg',
-      text: 'We got Roman blinds installed in our office and the results are fantastic. The quality of materials used is excellent and they function perfectly. Royal Elegance delivered exactly what we wanted within our budget and timeline.',
+      text: 'We got Roman blinds installed in our office and the results are fantastic. The quality of materials used is excellent and they function perfectly. Noor Furnishings delivered exactly what we wanted within our budget and timeline.',
       product: 'Roman Blinds',
     },
     {
@@ -74,7 +74,7 @@ const Testimonials = () => {
       location: 'Miyapur, Hyderabad',
       rating: 5,
       image: '/Images/Blinds/Zebra-Blinds.jpg',
-      text: 'The zebra blinds in my bedroom are perfect! They provide excellent light control and privacy. The installation was quick and clean. Royal Elegance has earned a loyal customer. Will definitely return for future projects!',
+      text: 'The zebra blinds in my bedroom are perfect! They provide excellent light control and privacy. The installation was quick and clean. Noor Furnishings has earned a loyal customer. Will definitely return for future projects!',
       product: 'Zebra Blinds',
     },
   ];
@@ -174,7 +174,7 @@ const Testimonials = () => {
               viewport={{ once: true }}
               className="mt-12 text-center bg-gradient-to-r from-gold-600 to-gold-700 text-white p-8 rounded-lg shadow-lg"
             >
-              <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Experience Royal Elegance?</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-4">Ready to Experience Noor Furnishings Elegance?</h3>
               <p className="mb-6 text-lg">Join hundreds of satisfied customers and transform your space today</p>
               <a
                 href="/enquiry"

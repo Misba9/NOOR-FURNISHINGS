@@ -13,7 +13,7 @@ const Linen = () => {
     'Custom sizing available',
     'Professional installation included',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'UV resistant and fade-proof',
   ];
 

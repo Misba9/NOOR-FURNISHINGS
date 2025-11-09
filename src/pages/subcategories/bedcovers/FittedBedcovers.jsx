@@ -12,7 +12,6 @@ const FittedBedcovers = () => {
     'Premium quality fabrics for lasting comfort',
     'Available in various sizes and styles',
     'Easy maintenance and cleaning',
-    '2-year warranty',
     'Wide range of designs and colors',
     'Hypoallergenic materials',
     'Temperature regulating properties',

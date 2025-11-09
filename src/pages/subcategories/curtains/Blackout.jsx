@@ -13,7 +13,7 @@ const Blackout = () => {
     'Custom sizing available',
     'Professional installation included',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'Noise reduction benefits',
   ];
 

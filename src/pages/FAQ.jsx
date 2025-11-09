@@ -21,7 +21,7 @@ const FAQ = () => {
     },
     {
       question: 'Do you offer warranties on your products?',
-      answer: 'Yes, all our products come with a manufacturer warranty. Curtains and fabrics have a 1-year warranty, while blinds and mechanical components have a 2-year warranty against manufacturing defects.',
+      answer: 'Yes, all our products come with a manufacturer warranty. Curtains and fabrics have a 1-year warranty, while blinds and mechanical components  against manufacturing defects.',
     },
     {
       question: 'Can I see samples before ordering?',

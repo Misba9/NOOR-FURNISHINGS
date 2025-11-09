@@ -12,7 +12,7 @@ const LuxuryBedSets = () => {
     'Premium quality fabrics for lasting comfort',
     'Available in various sizes and styles',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'Wide range of luxurious designs',
     'Hypoallergenic materials',
     'Luxurious finishing touches',
@@ -27,7 +27,7 @@ const LuxuryBedSets = () => {
   // SEO data for this page
   const seoData = {
     title: "Luxury Bed Sets - Premium Collections with Exquisite Designs",
-    description: "Premium luxury bed sets with exquisite designs and finest materials. Luxurious finishing touches with 2-year warranty in Hyderabad.",
+    description: "Premium luxury bed sets with exquisite designs and finest materials. Luxurious finishing touches in Hyderabad.",
     keywords: "luxury bed sets, premium bed sets, exquisite bed sets, luxury bedding, premium bedding, Hyderabad luxury bedding",
     image: "/Images/Bedcovers/Luxury-Bed-Set.jpg",
     url: "https://www.noorfurnishings.com/subcategories/bedcovers/luxury-bed-sets",

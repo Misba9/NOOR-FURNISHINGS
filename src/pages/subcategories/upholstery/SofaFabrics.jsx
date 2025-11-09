@@ -11,7 +11,6 @@ const SofaFabrics = () => {
     'Durable materials for long-lasting performance',
     'Available in various textures and patterns',
     'Easy maintenance and cleaning',
-    '2-year warranty',
     'Wide range of colors and designs',
     'Stain-resistant properties',
     'Comfort and aesthetic appeal',

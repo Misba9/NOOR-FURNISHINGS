@@ -12,7 +12,7 @@ const ZebraBlinds = () => {
     'Durable materials for long-lasting performance',
     'Available in various sizes and styles',
     'Easy operation and maintenance',
-    '2-year warranty',
+    
     'Wide range of colors and patterns',
     'Energy efficient properties',
     'Flexible light control options',

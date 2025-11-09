@@ -12,7 +12,7 @@ const RomanBlinds = () => {
     'Durable materials for long-lasting performance',
     'Available in various sizes and styles',
     'Easy operation and maintenance',
-    '2-year warranty',
+    
     'Wide range of fabrics and colors',
     'Energy efficient properties',
     'Privacy and light filtering options',

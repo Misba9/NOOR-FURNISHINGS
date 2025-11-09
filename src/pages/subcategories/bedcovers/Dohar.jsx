@@ -12,7 +12,7 @@ const Dohar = () => {
     'Premium quality fabrics for lasting comfort',
     'Available in various sizes and styles',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'Wide range of traditional designs',
     'Hypoallergenic materials',
     'Lightweight and breathable',

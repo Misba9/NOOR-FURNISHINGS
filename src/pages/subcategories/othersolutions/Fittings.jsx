@@ -12,7 +12,6 @@ const Fittings = () => {
     'Durable materials for long-lasting performance',
     'Available in various styles and finishes',
     'Professional installation included',
-    '2-year warranty',
     'Wide range of customization options',
     'Enhances functionality and appearance',
     'Complements existing window treatments',
@@ -27,7 +26,7 @@ const Fittings = () => {
   // SEO data for this page
   const seoData = {
     title: "Fittings - Hardware and Accessories for Window Treatments",
-    description: "Premium fittings with hardware and accessories for window treatments. Durable materials with professional installation and 2-year warranty in Hyderabad.",
+    description: "Premium fittings with hardware and accessories for window treatments. Durable materials with professional installation and in Hyderabad.",
     keywords: "fittings, window treatment hardware, window accessories, curtain rods, brackets, window treatment accessories, Hyderabad fittings",
     image: "/Images/Other-Solutions/fittings.jpg",
     url: "https://www.noorfurnishings.com/subcategories/othersolutions/fittings",

@@ -12,7 +12,7 @@ const Shaggy = () => {
     'Available in various sizes and shapes',
     'Professional installation included',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'Wide range of colors',
     'Adds warmth and comfort to any space',
   ];

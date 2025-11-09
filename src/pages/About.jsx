@@ -63,7 +63,7 @@ const About = () => {
               >
                 <h2 className="text-4xl font-bold text-brown-900 mb-6">Our Story</h2>
                 <p className="text-brown-700 mb-4">
-                  Royal Elegance Interiors was founded in 2005 with a simple vision: to bring luxury and sophistication
+                  Noor Furnishings was founded in 2005 with a simple vision: to bring luxury and sophistication
                   to every home. What started as a small family business has grown into one of Hyderabad's most trusted
                   names in premium curtains, carpets, and interior solutions.
                 </p>

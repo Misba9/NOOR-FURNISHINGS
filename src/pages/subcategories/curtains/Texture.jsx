@@ -13,7 +13,6 @@ const Texture = () => {
     'Custom sizing available',
     'Professional installation included',
     'Easy maintenance and cleaning',
-    '2-year warranty',
     'Wide range of textural options',
     'Adds depth and dimension to spaces',
   ];

@@ -12,7 +12,7 @@ const Turkish = () => {
     'Available in various sizes and shapes',
     'Professional installation included',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'Wide range of traditional designs',
     'Hand-knotted for durability',
   ];

@@ -23,7 +23,7 @@ const ProductPage = () => {
     'Custom sizing available',
     'Professional installation included',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'Wide range of colors and patterns',
     'UV resistant and fade-proof',
     'Expert consultation provided',
@@ -38,7 +38,7 @@ const ProductPage = () => {
   // SEO data for this page
   const seoData = {
     title: `${subcategoryTitle} - Premium ${categoryTitle} by NOOR FURNISHINGS`,
-    description: `Discover premium ${subcategoryTitle.toLowerCase()} from NOOR FURNISHINGS in Hyderabad. High-quality ${categoryTitle.toLowerCase()} with custom sizing, professional installation, and 2-year warranty.`,
+    description: `Discover premium ${subcategoryTitle.toLowerCase()} from NOOR FURNISHINGS in Hyderabad. High-quality ${categoryTitle.toLowerCase()} with custom sizing, professional installation.`,
     keywords: `${subcategoryTitle.toLowerCase()}, ${categoryTitle.toLowerCase()}, premium ${categoryTitle.toLowerCase()}, custom ${categoryTitle.toLowerCase()}, Hyderabad ${categoryTitle.toLowerCase()}, luxury ${categoryTitle.toLowerCase()}`,
     image: `/${subcategory}.jpg`,
     url: `https://www.noorfurnishings.com/subcategories/${category}/${subcategory}`,

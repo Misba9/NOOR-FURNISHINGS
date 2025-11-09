@@ -12,7 +12,7 @@ const Sheer = () => {
     'Custom sizing available',
     'Professional installation included',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'Wide range of colors and patterns',
     'Layering option with other curtains',
   ];

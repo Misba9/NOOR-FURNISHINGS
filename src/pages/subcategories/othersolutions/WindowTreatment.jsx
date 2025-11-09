@@ -11,7 +11,6 @@ const WindowTreatment = () => {
     'Durable materials for long-lasting performance',
     'Available in various styles and designs',
     'Professional installation included',
-    '2-year warranty',
     'Wide range of customization options',
     'Energy efficient properties',
     'Enhanced privacy and light control',

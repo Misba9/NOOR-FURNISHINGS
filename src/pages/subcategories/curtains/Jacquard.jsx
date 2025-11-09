@@ -12,7 +12,7 @@ const Jacquard = () => {
     'Custom sizing available',
     'Professional installation included',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'Wide range of colors and patterns',
     'UV resistant and fade-proof',
   ];

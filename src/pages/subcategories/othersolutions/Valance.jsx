@@ -12,7 +12,6 @@ const Valance = () => {
     'Durable materials for long-lasting performance',
     'Available in various styles and designs',
     'Professional installation included',
-    '2-year warranty',
     'Wide range of customization options',
     'Enhances architectural features',
     'Complements existing window treatments',
@@ -27,7 +26,7 @@ const Valance = () => {
   // SEO data for this page
   const seoData = {
     title: "Valance - Decorative Top Treatments for Windows",
-    description: "Premium valance with decorative top treatments for windows. Enhances architectural features with professional installation and 2-year warranty in Hyderabad.",
+    description: "Premium valance with decorative top treatments for windows. Enhances architectural features with professional installation and in Hyderabad.",
     keywords: "valance, window valance, decorative window treatments, top window treatments, architectural features, window decor, Hyderabad valance",
     image: "/Images/Other-Solutions/Valance.jpg",
     url: "https://www.noorfurnishings.com/subcategories/othersolutions/valance",

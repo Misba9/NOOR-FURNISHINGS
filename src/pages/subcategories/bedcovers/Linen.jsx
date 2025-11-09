@@ -12,7 +12,7 @@ const Linen = () => {
     'Premium quality linen for lasting comfort',
     'Available in various sizes and styles',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'Wide range of natural colors',
     'Hypoallergenic materials',
     'Temperature regulating properties',

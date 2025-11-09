@@ -13,7 +13,7 @@ const Imported = () => {
     'Custom sizing available',
     'Professional installation included',
     'Easy maintenance and cleaning',
-    '2-year warranty',
+    
     'Wide range of exclusive patterns',
     'Luxury quality guaranteed',
   ];
