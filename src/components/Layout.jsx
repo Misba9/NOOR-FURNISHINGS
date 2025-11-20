@@ -1,5 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import { MessageCircle } from 'lucide-react';
 import TopBar from './TopBar';
 import Navbar from './Navbar';
@@ -16,6 +17,9 @@ const Layout = () => {
         <Outlet />
       </main>
       <Footer />
+      
+      {/* Vercel Analytics */}
+      <Analytics />
       
       {/* Floating WhatsApp Button */}
       <a
