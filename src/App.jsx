@@ -68,6 +68,14 @@ function ScrollToTop() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  useEffect(() => {
+    if (typeof window.gtag === 'function') {
+      window.gtag('config', 'G-7W6RC70G5N', {
+        page_path: pathname,
+      });
+    }
+  }, [pathname]);
+
   return null;
 }
 
